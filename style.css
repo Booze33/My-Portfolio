@@ -11,7 +11,7 @@
 @media screen and (max-width: 650px) {
  *, *::after, *::before {
     list-style: none;
-    background-color: hsla(0, 27%, 98%, 0.97);
+    background-color: transparent;
  }
 
 .header {

@@ -1,16 +1,18 @@
 :root {
-    --font-family: 'Chivo Mono', monospace, 'Noto Sans JP', sans-serif;
-    --font-size-h1: 40px;
-    --font-size-h2: 32px;
-    --font-size-h3: 16px;
-    --font-size-logo: 18px;
-    --font-size-p: 16px;
+  --font-family: 'Chivo Mono', monospace, 'Noto Sans JP', sans-serif;
+  --font-size-h1: 40px;
+  --font-size-h2: 32px;
+  --font-size-h3: 16px;
+  --font-size-logo: 18px;
+  --font-size-p: 16px;
 }
 
 @media screen and (max-width: 650px) {
- *, *::after, *::before {
+  *,
+  *::after,
+  *::before {
     list-style: none;
- }
+  }
 
   .header {
     display: flex;
@@ -33,7 +35,7 @@
     padding-bottom: 5rem;
   }
 
-  #first-sec h1{
+  #first-sec h1 {
     margin-left: 1rem;
     margin-top: 1rem;
     padding-top: 4rem;
@@ -42,7 +44,7 @@
     font-weight: 700;
   }
 
-  #first-sec p{
+  #first-sec p {
     margin: -1.5rem 1rem 0 1rem;
     font-size: var(--font-size-p);
     font-family: var(--font-family);
@@ -69,7 +71,7 @@
     background-color: white;
   }
 
-  #second-sec .snapshoot-img-1 img{
+  #second-sec .snapshoot-img-1 img {
     width: 268px;
     height: 220px;
   }
@@ -109,7 +111,7 @@
     font-family: var(--font-family);
     font-size: 12px;
   }
-  
+
   #second-sec button {
     margin: 1rem 0 0 0;
     color: #396df2;

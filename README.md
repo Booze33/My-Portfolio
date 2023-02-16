@@ -5,7 +5,7 @@
 <div align="center">
  
 
-  <h3><b>Microverse README Template</b></h3>
+  
 
 </div>
 
@@ -45,24 +45,24 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">HTML and CSS</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
@@ -72,11 +72,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+
+- **Install stylelint for CSS**
+- **Install Webhint**
+- **Design your page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,9 +94,13 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+
 
 To get a local copy up and running, follow these steps.
+- Copy branch URL
+- Choose a local folder at the destination
+- Paste the URL 
+- Clone the branch
 
 ### Prerequisites
 
@@ -119,24 +123,19 @@ Clone this repository to your desired folder:
 ### Install
 
 Install this project with:
-
+- Copy the code and run it in your terminal
+- Wait for it to install
+- Then run the npm code in your terminal
 
 
 ### Usage
 
 To run the project, execute the following command:
+-Right click on the html file
+-Click on live previeew
+-A new tab will open on your browser running the page
 
 
-
-### Run tests
-
-To run tests, run the following command:
-
-
-
-### Deployment
-
-You can deploy this project using:
 
 
  
@@ -164,9 +163,9 @@ You can deploy this project using:
 
 
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Add javascript to make page interactive**
+- [ ] **Add more sttling to the page**
+- [ ] **Keep the page simple**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

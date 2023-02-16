@@ -1,5 +1,5 @@
 :root {
-  --font-family: 'Chivo Mono', monospace, 'Noto Sans JP', sans-serif;
+  --font-family: 'Poppins', sans-serif;
   --font-size-h1: 40px;
   --font-size-h2: 32px;
   --font-size-h3: 16px;
@@ -16,32 +16,40 @@
 
   .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1rem 1.2rem 0 1.2rem;
     height: 1rem;
   }
 
-  header {
+  .logo {
     color: #6070ff;
     font-size: var(--font-size-logo);
     font-family: var(--font-family);
     font-weight: 900;
+    text-decoration: none;
   }
 
   #first-sec {
     background-image: url("images/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: 60% 70%;
     padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
   }
 
   #first-sec h1 {
     margin-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding-top: 4rem;
     font-size: var(--font-size-h1);
     font-family: var(--font-family);
     font-weight: 700;
+    letter-spacing: -3px;
+    
   }
 
   #first-sec p {
@@ -63,72 +71,7 @@
     margin: 0 9rem 0 -1.3rem;
   }
 
-  #second-sec {
-    margin: 3rem 1rem 3rem 1rem;
-    border: #dfe1e6 1px solid;
-    border-radius: 16px;
-    padding: 0.7rem;
-    background-color: white;
-  }
-
-  #second-sec .snapshoot-img-1 img {
-    width: 268px;
-    height: 220px;
-  }
-
-  #second-sec h2 {
-    font-size: var(--font-size-h2);
-    font-family: var(--font-family);
-  }
-
-  #second-sec .snapshoot {
-    font-size: 13px;
-    font-family: var(--font-family);
-    display: flex;
-    justify-content: space-between;
-    color: #7a869a;
-    background-color: transparent;
-    margin: 0 3rem 0 -2.3rem;
-  }
-
-  #second-sec p {
-    font-size: var(--font-size-p);
-    font-family: var(--font-family);
-  }
-
-  #second-sec ul {
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    margin: 0 4rem 0 -2.3rem;
-  }
-
-  #second-sec .tonic li {
-    color: #6070ff;
-    background-color: #ebebff;
-    border-radius: 8px;
-    padding: 0 0.8rem 0 0.8rem;
-    font-family: var(--font-family);
-    font-size: 12px;
-  }
-
-  #second-sec button {
-    margin: 1rem 0 0 0;
-    color: #396df2;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    font-size: 17px;
-    font-family: var(--font-family);
-    border: 1px solid rgb(26, 26, 240);
-    border-radius: 8px;
-  }
-
   #first-sec ul:hover {
-    cursor: pointer;
-  }
-
-  #second-sec button:hover {
-    background: #6070ff;
-    color: white;
     cursor: pointer;
   }
 }

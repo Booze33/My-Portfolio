@@ -35,11 +35,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Portfolio: Mobile setup] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[Hello Microverse!]** is a project for week 1.
+**[Portfolio: Mobile setup]** is a project for week 1.
 
 ## 🛠 Built With <a name="built-with"></a>
 

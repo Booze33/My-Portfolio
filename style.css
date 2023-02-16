@@ -1,41 +1,33 @@
 :root {
-    --font-family: 'Chivo Mono', monospace;
-    --font-family: 'Noto Sans JP', sans-serif;
+    --font-family: 'Chivo Mono', monospace, 'Noto Sans JP', sans-serif;
     --font-size-h1: 40px;
     --font-size-h2: 32px;
     --font-size-h3: 16px;
     --font-size-logo: 18px;
     --font-size-p: 16px;
 }
-
 @media screen and (max-width: 650px) {
  *, *::after, *::before {
     list-style: none;
-    background-color: transparent;
  }
-
 .header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.2rem 0 1.2rem;
     height: 1rem;
 }
-
 header {
     color: #6070FF;
     font-size: var(--font-size-logo);
     font-family: var(--font-family);
     font-weight: 900;
-    
 }
-
 #first-sec {
     background-image: url("images/header-shapes\ mobile@2x.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 5rem;
 }
-
 #first-sec h1{
     margin-left: 1rem;
     margin-top: 1rem;
@@ -44,32 +36,25 @@ header {
     font-family: var(--font-family);
     font-weight: 700;
 }
-
 #first-sec p{
     margin: -1.5rem 1rem 0 1rem;
     font-size: var(--font-size-p);
     font-family: var(--font-family);
 }
-
 #first-sec h3 {
     margin-left: 1rem;
     font-size: var(--font-size-h3);
     font-family: var(--font-family);
     color: #7F8CFF;
-
 }
-
 #first-sec ul {
     display: flex;
     justify-content: space-between;
     margin: 0 9rem 0 -1.3rem;
-
 }
-
 #first-sec ul:hover {
     cursor: pointer;
 }
-
 #second-sec {
     margin: 3rem 1rem 3rem 1rem;
     border: #DFE1E6 1px solid;
@@ -77,18 +62,14 @@ header {
     padding: 0.7rem;
     background-color: white;
 }
-
 #second-sec .snapshoot-img-1 img{
     width: 268px;
-    
     height: 220px;
 }
-
 #second-sec h2 {
     font-size: var(--font-size-h2);
     font-family: var(--font-family);
 }
-
 #second-sec .snapshoot {
     font-size: 13px;
     font-family: var(--font-family);
@@ -98,19 +79,16 @@ header {
     background-color: transparent;;
     margin: 0 3rem 0 -2.3rem;
 }
-
 #second-sec p {
     font-size: var(--font-size-p);
     font-family: var(--font-family);
 }
-
 #second-sec ul {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
     margin: 0 4rem 0 -2.3rem;
 }
-
 #second-sec .tonic li {
     color: #6070FF;
     background-color: #ebebff;
@@ -118,9 +96,7 @@ header {
     padding: 0 0.8rem 0 0.8rem;
     font-family: var(--font-family);
     font-size: 12px;
-    
 }
-
 #second-sec button {
     margin: 1rem 0 0 0;
     color: #396DF2;
@@ -130,11 +106,9 @@ header {
     border: 1px solid rgb(26, 26, 240);
     border-radius: 8px;
 }
-
 #second-sec button:hover {
 background: #6070FF;
 color: white;
 cursor: pointer;
 }
-
 }

@@ -330,7 +330,14 @@
     margin-top: -1rem;
   }
 
+  .third-div .sec-list {
+    position: relative;
+    margin-left: -7vw;
+  }
+
   .third-div .sec-list li {
+    float: left;
+    margin: 1rem;
     background-color: #ebebff;
     color: #6070ff;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -383,7 +390,14 @@
     margin-top: -1rem;
   }
 
+  .fourth-div .sec-list {
+    position: relative;
+    margin-left: -7vw;
+  }
+
   .fourth-div .sec-list li {
+    float: left;
+    margin: 1rem;
     background-color: #ebebff;
     color: #6070ff;
     padding: 0.5rem 1rem 0.5rem 1rem;

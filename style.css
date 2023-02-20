@@ -114,7 +114,7 @@
     margin-right: 7vw;
   }
 
-  .second-div ul {
+  .second-div .ul-li {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -124,7 +124,7 @@
     margin-right: 7vw;
   }
 
-  .third-div ul {
+  .third-div .ul-li {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -134,7 +134,7 @@
     margin-right: 7vw;
   }
 
-  .fourth-div ul {
+  .fourth-div .ul-li {
     display: flex;
     justify-content: space-between;
     background-color: transparent;

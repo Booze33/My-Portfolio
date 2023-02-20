@@ -104,7 +104,7 @@
     color: #7f8cff;
   }
 
-  .first-div ul {
+  .first-div .ul-li {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
@@ -210,7 +210,16 @@
     margin-top: -1rem;
   }
 
+  .first-div .sec-list {
+    position: relative;
+    float: left;
+    margin-left: -7.5vw;
+  }
+
   .first-div .sec-list li {
+    margin: 1rem;
+    position: relative;
+    float: left;
     background-color: #ebebff;
     color: #6070ff;
     padding: 0.5rem 1rem 0.5rem 1rem;

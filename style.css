@@ -538,4 +538,36 @@
     height: 1px;
     margin-right: 5vw;
   }
+
+  .contact-form {
+    background-image: url("images/contact\ form\ shapes-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top right;
+    height: 779px;
+    background-color: #6070ff;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .contact-form h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h1);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    height: 52px;
+    margin-top: 7rem;
+  }
+
+  .contact-form p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    color: #ebebff;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    text-align: center; 
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }

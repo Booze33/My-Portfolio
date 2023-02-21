@@ -543,10 +543,11 @@
     background-image: url("images/contact\ form\ shapes-mobile@2x.png");
     background-repeat: no-repeat;
     background-size: 60%;
-    background-position: top right;
+    background-position: right;
     height: 779px;
     background-color: #6070ff;
     padding: 1rem 0 3rem 0;
+    border-top-left-radius: 100px;
   }
 
   .contact-form h1 {
@@ -579,23 +580,30 @@
   font-weight: 400;
   line-height: 20px;
   width: 327px;
+  height: 400px;
 }
 
 #name,
 #email {
-  background-color: #ffF;
+  background-color: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 80vw;
+  width: 83vw;
   height: 48px;
   margin-right: 5vw;
+  margin-left: -5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 #message {
   height: 170px;
   border: 1px solid #cfd8dc;
-  width: 80vw;
+  width: 83vw;
   border-radius: 8px;
+  margin-left: -5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .contact-form button {
@@ -608,4 +616,12 @@
   margin-left: 5vw;
 }
 
+.contact-form button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+.flex button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
 }

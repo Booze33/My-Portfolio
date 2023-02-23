@@ -51,7 +51,7 @@
   }
 
   #first-sec .desktop-h1 {
-    display: none
+    display: none;
   }
 
   .flex h1 {
@@ -132,7 +132,7 @@
     font-family: var(--font-family);
     color: #7f8cff;
   }
-  
+
   #first-sec ul {
     display: flex;
     justify-content: space-around;
@@ -839,16 +839,6 @@
     color: #fff;
   }
 
-  .flex .flex-box button:hover{
-    background-color: #6070ff;
-    color: #fff;
-  }
-
-  .contact-form form button:hover {
-    background-color: #6070ff;
-    color: #fff;
-  }
-
   .contact-form form button {
     font-family: var(--font-family);
     font-size: 17px;
@@ -878,6 +868,16 @@
     margin-left: 0;
     margin-top: 0.5vw;
     text-align: center;
+  }
+
+  .contact-form form button:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .flex .flex-box button:hover {
+    background-color: #6070ff;
+    color: #fff;
   }
 
   .flex-box-2 .flex-3 {

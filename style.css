@@ -742,13 +742,6 @@
     color: #172b4d;
   }
 
-  .desktop-work-sec .div-info p {
-    font-family: var(--font-family);
-    font-size: var(--font-size-p);
-    color: #344563;
-    margin-left: 1.2rem;
-  }
-
   .contact-form p {
     font-family: var(--font-family);
     font-size: 20px;
@@ -756,6 +749,13 @@
     width: 40vw;
     margin: -1rem 8rem 0 8rem;
     text-align: justify;
+  }
+
+  .desktop-work-sec .div-info p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    color: #344563;
+    margin-left: 1.2rem;
   }
 
   .flex .flex-box p {
@@ -842,6 +842,17 @@
     margin: 5rem 6vw 50vh 6vw;
   }
 
+  .desk-first-div,
+  .desk-second-div,
+  .desk-third-div,
+  .desk-fourth-div,
+  .desktop-work-sec,
+  .desk-div-img img {
+    grid-column: 1;
+    width: 40vw;
+    height: 30vw;
+  }
+
   .desktop-work-sec .desk-first-div {
     grid-column: 1;
     grid-row: 1;
@@ -892,17 +903,6 @@
     width: 83vw;
     height: 24rem;
     border-radius: 16px;
-  }
-
-  .desk-first-div,
-  .desk-second-div,
-  .desk-third-div,
-  .desk-fourth-div,
-  .desktop-work-sec,
-  .desk-div-img img {
-    grid-column: 1;
-    width: 40vw;
-    height: 30vw;
   }
 
   .desktop-work-sec .div-info {

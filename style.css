@@ -690,6 +690,12 @@
     margin-top: -0.2rem;
   }
 
+  .flex-3 li {
+    font-size: 20px;
+    font-family: var(--font-family);
+    color: #344563;
+  }
+
   .desktop-menu ul li {
     margin: 0 1rem 0 1rem;
     font-size: 15px;
@@ -712,6 +718,20 @@
     display: none;
   }
 
+  .contact-form h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex .flex-box h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2-desktop);
+    color: #091e42;
+  }
+
   #first-sec h1 {
     margin-top: 3rem;
     padding-top: 4rem;
@@ -722,12 +742,40 @@
     color: #172b4d;
   }
 
+  .desktop-work-sec .div-info p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-p);
+    color: #344563;
+    margin-left: 1.2rem;
+  }
+
+  .contact-form p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: #ebebff;
+    width: 40vw;
+    margin: -1rem 8rem 0 8rem;
+    text-align: justify;
+  }
+
+  .flex .flex-box p {
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: #344563;
+  }
+
   #first-sec p {
     font-size: var(--font-size-p-desktop);
     font-family: var(--font-family);
     text-align: justify;
     padding-top: -1rem;
     margin-top: -1rem;
+  }
+
+  .flex .flex-box h3 {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: #7f8cff;
   }
 
   #first-sec h3 {
@@ -739,11 +787,42 @@
     margin-top: -0.5rem;
   }
 
+  .contact-form form ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 10vw 1rem 10vw;
+  }
+
   #first-sec ul {
     display: flex;
     margin-left: -3.5rem;
     padding-top: -1rem;
     margin-top: -1rem;
+  }
+
+  .div-info .sec-list li {
+    float: left;
+    margin: 1vw;
+    background-color: #ebebff;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 8px;
+    height: 2vw;
+  }
+
+  .flex .flex-box .social-img li {
+    float: left;
+    margin: 1vw;
+  }
+
+  .flex-3 .grid .grid-2 .language li {
+    float: left;
+    background-color: #f7f7f9;
+    margin: 1vw;
+    font-size: 15px;
+    color: #253858;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4px;
   }
 
   #first-sec ul li {
@@ -815,11 +894,11 @@
     border-radius: 16px;
   }
 
-  .desktop-work-sec,
   .desk-first-div,
   .desk-second-div,
   .desk-third-div,
   .desk-fourth-div,
+  .desktop-work-sec,
   .desk-div-img img {
     grid-column: 1;
     width: 40vw;
@@ -853,13 +932,6 @@
     margin-top: -2vw;
   }
 
-  .desktop-work-sec .div-info p {
-    font-family: var(--font-family);
-    font-size: var(--font-size-p);
-    color: #344563;
-    margin-left: 1.2rem;
-  }
-
   .desktop-work-sec .div-info .sec-list {
     font-family: var(--font-family);
     font-size: 12px;
@@ -867,15 +939,6 @@
     position: relative;
     margin-left: -2.1rem;
     margin-top: -1vw;
-  }
-
-  .div-info .sec-list li {
-    float: left;
-    margin: 1vw;
-    background-color: #ebebff;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    border-radius: 8px;
-    height: 2vw;
   }
 
   .div-info button {
@@ -909,32 +972,31 @@
     flex-direction: column;
   }
 
-  .flex .flex-box h1 {
-    font-family: var(--font-family);
-    font-size: var(--font-size-h2-desktop);
-    color: #091e42;
-  }
-
-  .flex .flex-box p {
-    font-size: 16px;
-    font-family: var(--font-family);
-    color: #344563;
-  }
-
-  .flex .flex-box h3 {
-    font-family: var(--font-family);
-    font-size: 16px;
-    color: #7f8cff;
-  }
-
   .flex .flex-box .social-img {
     position: relative;
     margin-left: -3rem;
   }
 
-  .flex .flex-box .social-img li {
-    float: left;
-    margin: 1vw;
+  button:hover {
+    cursor: pointer;
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .contact-form form button {
+    font-family: var(--font-family);
+    font-size: 17px;
+    color: #396df2;
+    background-color: #fff;
+    border: 1px solid #396df2;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    width: 9rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5vw 23vw 0 23vw;
   }
 
   .flex .flex-box button {
@@ -957,12 +1019,6 @@
     flex-direction: column;
   }
 
-  .flex-3 li {
-    font-size: 20px;
-    font-family: var(--font-family);
-    color: #344563;
-  }
-
   .flex-3 .grid .more-img {
     float: right;
     margin-top: -4rem;
@@ -971,17 +1027,6 @@
   .flex-3 .grid .grid-2 .language {
     position: relative;
     margin-left: -3rem;
-  }
-
-  .flex-3 .grid .grid-2 .language li {
-    float: left;
-    background-color: #f7f7f9;
-    margin: 1vw;
-    font-size: 15px;
-    color: #253858;
-    width: 9vw;
-    height: 9vw;
-    border-radius: 4px;
   }
 
   .flex-3 .li-2 img {
@@ -993,6 +1038,7 @@
     float: right;
     margin-top: -4rem;
   }
+
   .flex-3 .line {
     height: 1px;
     background-color: #dfe1e6;
@@ -1007,29 +1053,6 @@
     border-top-left-radius: 100px;
     height: 800px;
     padding: 3rem 20vw 0 20vw;
-  }
-
-  .contact-form h1 {
-    font-family: var(--font-family);
-    font-size: var(--font-size-h2);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact-form p {
-    font-family: var(--font-family);
-    font-size: 20px;
-    color: #ebebff;
-    width: 40vw;
-    margin: -1rem 8rem 0 8rem;
-    text-align: justify;
-  }
-
-  .contact-form form ul {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 10vw 1rem 10vw;
   }
 
   .contact-form form ul li label input {
@@ -1049,28 +1072,5 @@
     padding-left: 1rem;
     padding-top: 1rem;
     border: 1px solid #cfd8dc;
-  }
-
-  .contact-form form button {
-    font-family: var(--font-family);
-    font-size: 17px;
-    color: #396df2;
-    background-color: #fff;
-    border: 1px solid #396df2;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    width: 9rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5vw;
-    text-align: center;
-    margin: 0 23vw 0 23vw;
-  }
-
-  button:hover {
-    cursor: pointer;
-    background-color: #6070ff;
-    color: #fff;
   }
 }

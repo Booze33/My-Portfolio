@@ -37,6 +37,18 @@
     font-family: var(--font-family);
     font-weight: 900;
     text-decoration: none;
+    animation: rotate 1s ease-in 2s 1;
+    transform-origin: top left;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    
+    100% {
+      transform: rotate(360deg)
+    }
   }
 
   #first-sec {
@@ -518,6 +530,18 @@
     font-weight: 900;
     text-decoration: none;
     margin-left: 8vw;
+    animation: rotate 1s ease-in 2s 1;
+    transform-origin: top left;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    
+    100% {
+      transform: rotate(360deg)
+    }
   }
 
   .menu-img {

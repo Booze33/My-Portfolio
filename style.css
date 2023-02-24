@@ -567,6 +567,7 @@
     font-size: 15px;
     font-family: var(--font-family);
     color: #344563;
+    transition: 2s;
   }
 
   #first-sec {

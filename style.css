@@ -37,6 +37,18 @@
     font-family: var(--font-family);
     font-weight: 900;
     text-decoration: none;
+    animation: rotate 1s ease-in 2s 1;
+    transform-origin: top left;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   #first-sec {
@@ -518,6 +530,18 @@
     font-weight: 900;
     text-decoration: none;
     margin-left: 8vw;
+    animation: rotate 1s ease-in 1s 1;
+    transform-origin: top left;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   .menu-img {
@@ -543,6 +567,7 @@
     font-size: 15px;
     font-family: var(--font-family);
     color: #344563;
+    transition: 1.5s;
   }
 
   #first-sec {
@@ -657,6 +682,13 @@
     height: 1vw;
   }
 
+  .desktop-menu ul li:hover {
+    font-size: 18px;
+    color: #6070ff;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
   .flex .flex-box .social-img li {
     float: left;
     margin: 0 1vw 0 1vw;
@@ -699,6 +731,13 @@
     grid-column: 1;
     width: 40vw;
     height: 30vw;
+    transition: all 2s;
+  }
+
+  .desk-div-img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
   }
 
   .desktop-work-sec .desk-first-div {

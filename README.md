@@ -227,3 +227,7 @@ _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/
 
 To run my portfolio online, click the link below:[Deploy portfolio.](https://booze33.github.io/My-Portfolio/)
 
+## Walk through video
+
+here is a video on how i created my portfolio:[Video](https://www.loom.com/share/ef6f79faaaaf4f22b27d619f594b3164)
+

@@ -50,6 +50,33 @@
       transform: rotate(360deg);
     }
   }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 8.5rem;
+    top:0.5rem;
+    appearance: none;
+    outline: none;
+    background:none;
+    border:none;
+    
+    
+   }
+
+   .hamburger .bar, .hamburger::after, .hamburger::before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: black;
+      margin: 6px 0px;
+      transition: 0.4s;
+      
+   }
 
   #first-sec {
     background-image: url("images/header-shapes\ mobile@2x.svg");

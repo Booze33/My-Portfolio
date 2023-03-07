@@ -113,6 +113,7 @@
     z-index: 1;
     opacity: 90%;
     backdrop-filter: blur(8px); 
+    position: absolute;
   }
 
   .mobile-nav a {

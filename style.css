@@ -106,12 +106,13 @@
     left: 0;
     background: #6070ff;
     width: 100vw;
-    height: 100vh;
+    height: 35rem;
     margin-top: -1.5rem;
     padding-top: 4rem;
     overflow-y: hidden;
+    overflow-x: hidden;
     z-index: 1;
-    opacity: 90%;
+    mix-blend-mode: multiply;
     backdrop-filter: blur(8px);
     position: absolute;
   }

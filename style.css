@@ -112,7 +112,7 @@
     overflow-y: hidden;
     z-index: 1;
     opacity: 90%;
-    backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px);
     position: absolute;
   }
 

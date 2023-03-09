@@ -160,7 +160,7 @@ popupThird.innerHTML = `
 <li><img src="images/Counter.png"></li>
 <li>2015</li>
 </ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio (1).png"></div>
+<div class="div-img"><img src="images/Snapshoot Portfolio (3).png"></div>
 `;
 const textThird = document.createElement('p');
 textThird.innerText = projects.firstDiv.text;
@@ -210,7 +210,7 @@ popupFourth.innerHTML = `
 <li><img src="images/Counter.png"></li>
 <li>2015</li>
 </ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio (2).png"></div>
+<div class="div-img"><img src="images/Snapshoot Portfolio.png"></div>
 `;
 const textFourth = document.createElement('p');
 textFourth.innerText = projects.firstDiv.text;
@@ -356,7 +356,7 @@ task2.innerHTML = `
 <li><img src="images/Counter.png"></li>
 <li>2015</li>
 </ul>
-<div class="pen"><img src="images/Snapshoot Portfolio (4).png"></div>
+<div class="pen"><img src="images/Snapshoot Portfolio (2).png"></div>
 <div class="vide">
 <p>${desktop.desktopFst.text}</p>
 <div class="drig">

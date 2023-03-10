@@ -250,16 +250,17 @@
 <section class="contact-form" id="contact">
     <h1>Contact me</h1>
     <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-    <form method="post" action="https://formspree.io/f/xoqzvkpg">
+    <form id="form" method="post" action="https://formspree.io/f/xoqzvkpg">
         <ul>
             <li>
                 <label for="name">
-                <input type="text" id="name" name="user-name" placeholder="Full Name" maxlength="30" required>
+                <input type="text" id="name" name="user-name" placeholder="Full Name" maxlength="30">
                 </label>
             </li>
             <li>
                 <label for="mail">
-                <input type="email" id="email" name="user-email" placeholder="Email" maxlength="30" required>
+                <input type="email" id="email" name="user-email" placeholder="Email" maxlength="30">
+                <div id="error">Email should be in lowercase</div>
                 </label>
             </li>
             <li>

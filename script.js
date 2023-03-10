@@ -501,3 +501,29 @@ close4.addEventListener('click', () => {
   task4.classList.remove('active');
   overlay.classList.remove('active');
 });
+
+// email validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+error.style.color = 'red';
+error.style.fontSize = '11px';
+error.style.display = 'none';
+form.addEventListener('submit', (e) => {
+
+  if (email.value === email.value.toLowerCase()){
+    form.submit();
+  } else {
+    e.preventDefault();
+    error.style.display = 'block';
+  };
+});
+
+/** 
+ * error.style.marginRight = '-5rem';
+error.style.marginTop = '-11px';
+error.style.backgroundColor = '#fff'
+error.style.padding = '2px 1px 2px 9px'
+error.style.borderRadius = '8px';
+error.style.width = '12rem';
+*/

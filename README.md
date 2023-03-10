@@ -30,14 +30,12 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Portfolio: Mobile setup] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Portfolio: Mobile setup]** is a project for week 1.
 
@@ -84,17 +82,15 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+- [Live Demo Link](https://booze33.github.io/My-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
 
 To get a local copy up and running, follow these steps.
 - Copy branch URL
@@ -135,18 +131,9 @@ To run the project, execute the following command:
 -Click on live previeew
 -A new tab will open on your browser running the page
 
-
-
-
- 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## 👥 Authors <a name="authors"></a>
-
-
 
 👤 **Author1**
 
@@ -154,14 +141,8 @@ To run the project, execute the following command:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 🔭 Future Features <a name="future-features"></a>
-
-
 
 - [ ] **Add javascript to make page interactive**
 - [ ] **Add more sttling to the page**
@@ -198,34 +179,11 @@ I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Deploy
-
-To run my portfolio online, click the link below:[Deploy portfolio.](https://booze33.github.io/My-Portfolio/)
 
 ## Walk through video
 

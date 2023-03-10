@@ -501,3 +501,17 @@ close4.addEventListener('click', () => {
   task4.classList.remove('active');
   overlay.classList.remove('active');
 });
+
+// email validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    e.preventDefault();
+    error.style.display = 'block';
+  }
+});

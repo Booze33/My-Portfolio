@@ -508,11 +508,10 @@ const email = document.getElementById('email');
 const error = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-
-  if (email.value === email.value.toLowerCase()){
+  if (email.value === email.value.toLowerCase()) {
     form.submit();
   } else {
     e.preventDefault();
     error.style.display = 'block';
-  };
+  }
 });

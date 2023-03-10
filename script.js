@@ -283,7 +283,7 @@ const desktop = {
   }
 };
 
-//first div
+// desktop first div
 
 const post = document.querySelector('.this');
 const task = document.createElement('div');
@@ -340,7 +340,7 @@ close.addEventListener('click',() => {
   task.classList.remove('active');
   overlay.classList.remove('active');
 })
-//second div
+//desktop second div
 const post2 = document.querySelector('.this-2');
 const task2 = document.createElement('div');
   task2.className = 'task2';
@@ -397,7 +397,7 @@ close2.addEventListener('click',() => {
   overlay.classList.remove('active');
 })
 
-// third div
+//desktop third div
 const post3 = document.querySelector('.this-3');
 const task3 = document.createElement('div');
   task3.className = 'task3';
@@ -453,7 +453,7 @@ close3.addEventListener('click',() => {
   task3.classList.remove('active');
   overlay.classList.remove('active');
 })
-// fourth div
+//desktop fourth div
 const post4 = document.querySelector('.this-4');
 const task4 = document.createElement('div');
   task4.className = 'task4';

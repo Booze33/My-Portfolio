@@ -506,9 +506,7 @@ close4.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
-error.style.color = 'red';
-error.style.fontSize = '11px';
-error.style.display = 'none';
+
 form.addEventListener('submit', (e) => {
 
   if (email.value === email.value.toLowerCase()){
@@ -519,11 +517,11 @@ form.addEventListener('submit', (e) => {
   };
 });
 
-/** 
- * error.style.marginRight = '-5rem';
-error.style.marginTop = '-11px';
-error.style.backgroundColor = '#fff'
-error.style.padding = '2px 1px 2px 9px'
-error.style.borderRadius = '8px';
-error.style.width = '12rem';
-*/
+//desktop
+/*#error {
+  color: red;
+  font-size: 11px;
+  background-color: #fff;
+  padding: 2px 5px 2px 5px;
+  border-radius: 6px;
+}*/

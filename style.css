@@ -753,10 +753,15 @@
 
   #error {
     color: red;
-    font-size: 11px;
+    font-size: 12px;
+    font-family: var(--font-family);
     background-color: #fff;
-    padding: 2px 5px 2px 5px;
-    border-radius: 6px;
+    padding: 2px 0 2px 5px;
+    border-radius: 4px;
+    margin-top: -10px;
+    margin-left: -5vw;
+    width: 11rem;
+    display: none;
   }
 }
 
@@ -852,10 +857,15 @@
 
   #error {
     color: red;
-    font-size: 11px;
+    font-size: 12px;
+    font-family: var(--font-family);
     background-color: #fff;
     padding: 2px 5px 2px 5px;
-    border-radius: 6px;
+    border-radius: 4px;
+    width: 13rem;
+    margin-top: -18px;
+    margin-left: 1rem;
+    display: none;
   }
 
   .cross {
@@ -1237,7 +1247,7 @@
     gap: 0;
     grid-template-columns: 1;
     grid-template-rows: repeat(4, 40rem);
-    height: 90rem;
+    height: 25rem;
     margin: 5rem 6vw 0 6vw;
   }
 

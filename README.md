@@ -37,7 +37,6 @@
 
 # 📖 [Portfolio: Mobile setup] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[Portfolio: Mobile setup]** is a project for week 1.
 
@@ -84,7 +83,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 

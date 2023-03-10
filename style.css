@@ -12,6 +12,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
   *,
   *::after,
   *::before {
@@ -749,9 +750,18 @@
   .task1 {
     display: none;
   }
+
+  #error {
+    color: red;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 6px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+
   *,
   *::after,
   *::before {
@@ -837,6 +847,15 @@
     z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
+  }
+
+
+  #error {
+    color: red;
+    font-size: 11px;
+    background-color: #fff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 6px;
   }
 
   .cross {

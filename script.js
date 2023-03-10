@@ -517,11 +517,3 @@ form.addEventListener('submit', (e) => {
   };
 });
 
-//desktop
-/*#error {
-  color: red;
-  font-size: 11px;
-  background-color: #fff;
-  padding: 2px 5px 2px 5px;
-  border-radius: 6px;
-}*/

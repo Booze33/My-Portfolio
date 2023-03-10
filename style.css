@@ -776,59 +776,64 @@
     flex-direction: column;
     transform: scale(0);
     transition: 1s;
+    overflow-y: hidden;
   }
 
   .task1.active {
-    top: 50%;
+    position: fixed;
+    bottom: 35%;
     left: 50%;
     display: flex;
     border: #ebecf0 1px solid;
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 40%);
+    transform: translate(-50%, 40%) scale(0.7,0.65);
     z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
 
   .task2.active {
-    top: 50%;
+    position: fixed;
+    bottom: 35%;
     left: 50%;
     display: flex;
     border: #ebecf0 1px solid;
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 40%) scale(0.7,0.65);
     z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
 
   .task3.active {
-    top: 50%;
+    position: fixed;
+    bottom: 35%;
     left: 50%;
     display: flex;
     border: #ebecf0 1px solid;
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 160%);
+    transform: translate(-50%, 40%) scale(0.7,0.65);
     z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
 
   .task4.active {
-    top: 50%;
+    position: fixed;
+    bottom: 35%;
     left: 50%;
     display: flex;
     border: #ebecf0 1px solid;
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 213%);
+    transform: translate(-50%, 40%) scale(0.7,0.65);
     z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
@@ -838,7 +843,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 4rem;
+    height: 3rem;
   }
 
   .h2-tag {
@@ -903,6 +908,7 @@
     transition: 2s;
     transform: scale(1);
     z-index: 1000;
+    backdrop-filter: blur(8px);
   }
 
   .ul-list {
@@ -919,7 +925,7 @@
 
   .pen img {
     min-width: 75vw;
-    height: 40vw;
+    height: 25vw;
   }
 
   .vide {
@@ -981,6 +987,7 @@
     border: 1px solid #396df2;
     border-radius: 8px;
     margin-top: 1.5rem;
+    text-decoration: none;
   }
 
   .desk-first-div,

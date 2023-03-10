@@ -26,7 +26,6 @@
 
   body.active {
     background-color: #c1c7d0;
-    
     backdrop-filter: blur(8px);
   }
 
@@ -787,8 +786,8 @@
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 40%) ;
-    z-index: 1001; 
+    transform: translate(-50%, 40%);
+    z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
@@ -801,8 +800,8 @@
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 100%) ;
-    z-index: 1001; 
+    transform: translate(-50%, 100%);
+    z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
@@ -815,8 +814,8 @@
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 160%) ;
-    z-index: 1001; 
+    transform: translate(-50%, 160%);
+    z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
@@ -829,8 +828,8 @@
     border-radius: 16px;
     background-color: #fff;
     flex-direction: column;
-    transform: translate(-50%, 213%) ;
-    z-index: 1001; 
+    transform: translate(-50%, 213%);
+    z-index: 1001;
     padding: 2rem 2rem 0 4rem;
     transition: 1s ease-in-out;
   }
@@ -970,7 +969,6 @@
     width: 20vw;
     height: 1px;
     background-color: #c1c7d0;
-
   }
 
   .top-link button {
@@ -983,6 +981,18 @@
     border: 1px solid #396df2;
     border-radius: 8px;
     margin-top: 1.5rem;
+  }
+
+  .desk-first-div,
+  .desk-second-div,
+  .desk-third-div,
+  .desk-fourth-div,
+  .desktop-work-sec,
+  .desk-div-img img {
+    grid-column: 1;
+    width: 40vw;
+    height: 30vw;
+    transition: all 2s;
   }
 
   .top-link button img {
@@ -1203,18 +1213,6 @@
     grid-template-rows: repeat(4, 40rem);
     height: 90rem;
     margin: 5rem 6vw 0 6vw;
-  }
-
-  .desk-first-div,
-  .desk-second-div,
-  .desk-third-div,
-  .desk-fourth-div,
-  .desktop-work-sec,
-  .desk-div-img img {
-    grid-column: 1;
-    width: 40vw;
-    height: 30vw;
-    transition: all 2s;
   }
 
   .desk-div-img:hover {

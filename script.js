@@ -506,12 +506,37 @@ close4.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
+const dame = document.getElementById('same');
+const message = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
+
+  let InputName = dame.value.trim();
+  let InputEmail = email.value.trim();
+  let InputMessage = message.value.trim();
+
+  if (InputName != null || InputEmail != null || InputMessage != null){
+    return
+  }
+
+
+
+
+    // set data object
+    var myFormData = {
+      name : InputName,
+      email : InputEmail,
+      comment: InputMessage,
+    };
+    
+    localStorage.setItem('myFormData', JSON.stringify(myFormData));
+  
+
   } else {
     e.preventDefault();
     error.style.display = 'block';
   }
 });
+

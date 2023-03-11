@@ -506,37 +506,33 @@ close4.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
-const dame = document.getElementById('same');
-const message = document.getElementById('message');
 
 // form checking for submition
+
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
     if (InputName != null || InputEmail != null || InputMessage != null) {
-      return;
+      form.submit();
     }
-  }
-  else {
+  } else {
     e.preventDefault();
     error.style.display = 'block';
   }
 });
+
+// email validation
 
 const formElements = document.querySelectorAll('.storage');
 const stringValues = localStorage.getItem('data');
 const parseValues = JSON.parse(stringValues);
 
 [formElements[0].value, formElements[1].value, formElements[2].value] = parseValues;
+
 for (let i = 0; i < formElements.length; i += 1) {
   formElements[i].addEventListener('keyup', () => {
-    const nameValue = formElements[0].value;
-    const emailValue = formElements[1].value;
-    const textAreaValue = formElements[2].value;
-    const values = [nameValue, emailValue, textAreaValue];
+    const values = [formElements[0].value, formElements[1].value, formElements[2].value];
     const stringifyValues = JSON.stringify(values);
     localStorage.setItem('data', stringifyValues);
   });
 }
-
-

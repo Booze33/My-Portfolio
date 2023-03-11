@@ -512,9 +512,6 @@ const error = document.getElementById('error');
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
-    if (InputName != null || InputEmail != null || InputMessage != null) {
-      form.submit();
-    }
   } else {
     e.preventDefault();
     error.style.display = 'block';

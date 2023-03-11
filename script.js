@@ -517,17 +517,18 @@ form.addEventListener('submit', (e) => {
     const InputMessage = message.value.trim();
 
     // set data object
-    
+
     const myFormData = {
-      name: InputName ,
-      email: InputEmail ,
-      comment: InputMessage ,
+      name: InputName,
+      email: InputEmail,
+      comment: InputMessage,
     };
 
     if (InputName != null || InputEmail != null || InputMessage != null) {
       return;
     }
-    
+
+
     localStorage.setItem('myFormData', JSON.stringify(myFormData));
 
   } else {
@@ -537,7 +538,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // get Item
-let myFormData = JSON.parse(localStorage.getItem('myFormData'));
+const myFormData = JSON.parse(localStorage.getItem('myFormData'));
 
 dame.value = myFormData.name;
 email.value = myFormData.email;

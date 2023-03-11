@@ -516,19 +516,7 @@ form.addEventListener('submit', (e) => {
     const InputEmail = email.value.trim();
     const InputMessage = message.value.trim();
 
-    // set data object
-
-    const myFormData = {
-      name: InputName,
-      email: InputEmail,
-      comment: InputMessage,
-    };
-
-    if (InputName != null || InputEmail != null || InputMessage != null) {
-      return;
-    }
-
-    localStorage.setItem('myFormData', JSON.stringify(myFormData));
+    
   } else {
     e.preventDefault();
     error.style.display = 'block';
@@ -541,3 +529,19 @@ const myFormData = JSON.parse(localStorage.getItem('myFormData'));
 dame.value = myFormData.name;
 email.value = myFormData.email;
 message.value = myFormData.comment;
+
+form.addEventListener('input', () => {
+// set data object
+
+const myFormData = {
+  name: InputName,
+  email: InputEmail,
+  comment: InputMessage,
+};
+
+if (InputName != null || InputEmail != null || InputMessage != null) {
+  return;
+}
+
+localStorage.setItem('myFormData', JSON.stringify(myFormData));
+})

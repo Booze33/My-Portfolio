@@ -510,25 +510,7 @@ const dame = document.getElementById('same');
 const message = document.getElementById('message');
 
 function setData(){
-  dame.value = localStorage.getItem('myFormData')
-  email.value = MyFormData.email;
-  message.value = MyFormData.comment;
-  const MyFormData = {
-    name: InputName,
-    email: InputEmail,
-    comment: InputMessage,
-  };
-  // get Item
-  const myFormData = JSON.parse(localStorage.getItem('myFormData'));
-  dame.value = MyFormData.name;
-  email.value = MyFormData.email;
-  message.value = MyFormData.comment;
-
-  const InputName = dame.value.trim();
-  const InputEmail = email.value.trim();
-  const InputMessage = message.value.trim();
-
-  // set data object 
+  
 }
 
 

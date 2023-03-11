@@ -509,13 +509,6 @@ const error = document.getElementById('error');
 const dame = document.getElementById('same');
 const message = document.getElementById('message');
 
-function setData(){
-  
-}
-
-
-
-
 // form checking for submition
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
@@ -523,8 +516,6 @@ form.addEventListener('submit', (e) => {
     if (InputName != null || InputEmail != null || InputMessage != null) {
       return;
     }
-
-    localStorage.setItem('myFormData', JSON.stringify(myFormData));
   }
   else {
     e.preventDefault();
@@ -532,4 +523,20 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-setData();
+const formElements = document.querySelectorAll('.storage');
+const stringValues = localStorage.getItem('data');
+const parseValues = JSON.parse(stringValues);
+
+[formElements[0].value, formElements[1].value, formElements[2].value] = parseValues;
+for (let i = 0; i < formElements.length; i += 1) {
+  formElements[i].addEventListener('keyup', () => {
+    const nameValue = formElements[0].value;
+    const emailValue = formElements[1].value;
+    const textAreaValue = formElements[2].value;
+    const values = [nameValue, emailValue, textAreaValue];
+    const stringifyValues = JSON.stringify(values);
+    localStorage.setItem('data', stringifyValues);
+  });
+}
+
+

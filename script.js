@@ -502,34 +502,39 @@ close4.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-// email validation
 const form = document.getElementById('form');
-const email = document.getElementById('email');
-const error = document.getElementById('error');
+const InputEmail = document.getElementById('email');
+const InputName = document.getElementById('same');
+const InputMessage = document.getElementById('message');
 
-// form checking for submition
+// get item
+const myFormData = JSON.parse(localStorage.getItem('myFormData'));
 
-form.addEventListener('submit', (e) => {
-  if (email.value === email.value.toLowerCase()) {
-    form.submit();
-  } else {
-    e.preventDefault();
-    error.style.display = 'block';
-  }
-});
-
-// email validation
-
-const formElements = document.querySelectorAll('.storage');
-const stringValues = localStorage.getItem('data');
-const parseValues = JSON.parse(stringValues);
-
-[formElements[0].value, formElements[1].value, formElements[2].value] = parseValues;
-
-for (let i = 0; i < formElements.length; i += 1) {
-  formElements[i].addEventListener('keyup', () => {
-    const values = [formElements[0].value, formElements[1].value, formElements[2].value];
-    const stringifyValues = JSON.stringify(values);
-    localStorage.setItem('data', stringifyValues);
-  });
+if (myFormData) {
+  InputName.value = myFormData.name;
+  InputEmail.value = myFormData.email;
+  InputMessage.value = myFormData.message;
 }
+
+form.addEventListener('input', () => {
+  // get values
+
+  const email = InputEmail.value.trim();
+  const name = InputName.value.trim();
+  const message = InputMessage.value.trim();
+
+  // if value
+  if (!name || !email || !message) {
+    return;
+  }
+
+  // save object
+  const myFormData = {
+    name,
+    email,
+    message,
+  };
+
+  // set item
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+});

@@ -502,16 +502,39 @@ close4.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-// email validation
 const form = document.getElementById('form');
-const email = document.getElementById('email');
-const error = document.getElementById('error');
+const InputEmail = document.getElementById('email');
+const InputName = document.getElementById('same');
+const InputMessage = document.getElementById('message');
 
-form.addEventListener('submit', (e) => {
-  if (email.value === email.value.toLowerCase()) {
-    form.submit();
-  } else {
-    e.preventDefault();
-    error.style.display = 'block';
+// get item
+const myFormData = JSON.parse(localStorage.getItem('myFormData'));
+
+if (myFormData) {
+  InputName.value = myFormData.name;
+  InputEmail.value = myFormData.email;
+  InputMessage.value = myFormData.message;
+}
+
+form.addEventListener('input', () => {
+  // get values
+
+  const email = InputEmail.value.trim();
+  const name = InputName.value.trim();
+  const message = InputMessage.value.trim();
+
+  // if value
+  if (!name || !email || !message) {
+    return;
   }
+
+  // save object
+  const myFormData = {
+    name,
+    email,
+    message,
+  };
+
+  // set item
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
 });

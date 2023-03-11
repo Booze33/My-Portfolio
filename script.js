@@ -509,21 +509,35 @@ const error = document.getElementById('error');
 const dame = document.getElementById('same');
 const message = document.getElementById('message');
 
+function setData(){
+  dame.value = localStorage.getItem('myFormData')
+  email.value = MyFormData.email;
+  message.value = MyFormData.comment;
+  const MyFormData = {
+    name: InputName,
+    email: InputEmail,
+    comment: InputMessage,
+  };
+  // get Item
+  const myFormData = JSON.parse(localStorage.getItem('myFormData'));
+  dame.value = MyFormData.name;
+  email.value = MyFormData.email;
+  message.value = MyFormData.comment;
+
+  const InputName = dame.value.trim();
+  const InputEmail = email.value.trim();
+  const InputMessage = message.value.trim();
+
+  // set data object 
+}
+
+
+
+
+// form checking for submition
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
-    const InputName = dame.value.trim();
-    const InputEmail = email.value.trim();
-    const InputMessage = message.value.trim();
-
-    // set data object
-
-    const myFormData = {
-      name: InputName,
-      email: InputEmail,
-      comment: InputMessage,
-    };
-
     if (InputName != null || InputEmail != null || InputMessage != null) {
       return;
     }
@@ -536,9 +550,4 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// get Item
-const myFormData = JSON.parse(localStorage.getItem('myFormData'));
-
-dame.value = myFormData.name;
-email.value = myFormData.email;
-message.value = myFormData.comment;
+setData();

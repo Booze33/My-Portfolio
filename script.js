@@ -513,26 +513,22 @@ form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
 
-  let InputName = dame.value.trim();
-  let InputEmail = email.value.trim();
-  let InputMessage = message.value.trim();
-
-  if (InputName != null || InputEmail != null || InputMessage != null){
-    return
-  }
-
-
-
-
     // set data object
-    var myFormData = {
-      name : InputName,
-      email : InputEmail,
-      comment: InputMessage,
+    let myFormData = {
+      name : InputName ,
+      email : InputEmail ,
+      comment: InputMessage ,
     };
+
+    const InputName = dame.value.trim();
+    const InputEmail = email.value.trim();
+    const InputMessage = message.value.trim();
+
+    if (InputName != null || InputEmail != null || InputMessage != null) {
+      return;
+    }
     
     localStorage.setItem('myFormData', JSON.stringify(myFormData));
-  
 
   } else {
     e.preventDefault();
@@ -540,3 +536,9 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+// get Item
+let myFormData = JSON.parse(localStorage.getItem('myFormData'));
+
+dame.value = myFormData.name;
+email.value = myFormData.email;
+message.value = myFormData.comment;

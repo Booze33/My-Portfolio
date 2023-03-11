@@ -512,17 +512,17 @@ const message = document.getElementById('message');
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
-
-    // set data object
-    let myFormData = {
-      name : InputName ,
-      email : InputEmail ,
-      comment: InputMessage ,
-    };
-
     const InputName = dame.value.trim();
     const InputEmail = email.value.trim();
     const InputMessage = message.value.trim();
+
+    // set data object
+    
+    const myFormData = {
+      name: InputName ,
+      email: InputEmail ,
+      comment: InputMessage ,
+    };
 
     if (InputName != null || InputEmail != null || InputMessage != null) {
       return;

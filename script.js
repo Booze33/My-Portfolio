@@ -528,10 +528,10 @@ form.addEventListener('submit', (e) => {
       return;
     }
 
-
     localStorage.setItem('myFormData', JSON.stringify(myFormData));
-
-  } else {
+  }
+  
+  else {
     e.preventDefault();
     error.style.display = 'block';
   }

@@ -506,42 +506,23 @@ close4.addEventListener('click', () => {
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('error');
-const dame = document.getElementById('same');
-const message = document.getElementById('message');
+
+// form checking for submition
 
 form.addEventListener('submit', (e) => {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
-    const InputName = dame.value.trim();
-    const InputEmail = email.value.trim();
-    const InputMessage = message.value.trim();
-
     
-  } else {
     e.preventDefault();
     error.style.display = 'block';
   }
 });
 
-// get Item
-const myFormData = JSON.parse(localStorage.getItem('myFormData'));
+// email validation
 
-dame.value = myFormData.name;
-email.value = myFormData.email;
-message.value = myFormData.comment;
+const formElements = document.querySelectorAll('.storage');
+const stringValues = localStorage.getItem('data');
+const parseValues = JSON.parse(stringValues);
 
-form.addEventListener('input', () => {
-// set data object
+[formElements[0].value, formElements[1].value, formElements[2].value] = parseValues;
 
-const myFormData = {
-  name: InputName,
-  email: InputEmail,
-  comment: InputMessage,
-};
-
-if (InputName != null || InputEmail != null || InputMessage != null) {
-  return;
-}
-
-localStorage.setItem('myFormData', JSON.stringify(myFormData));
-})

@@ -502,11 +502,12 @@ close4.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-export const form = document.getElementById('form');
+const form = document.getElementById('form');
 const InputEmail = document.getElementById('email');
 const InputName = document.getElementById('same');
 const InputMessage = document.getElementById('message');
 
+export default form;
 // get item
 const myFormData = JSON.parse(localStorage.getItem('myFormData'));
 

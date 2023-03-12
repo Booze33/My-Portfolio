@@ -1,3 +1,7 @@
+import {
+    form
+} from './script.js'
+
 const email = document.getElementById('email');
 const error = document.getElementById('error');
 

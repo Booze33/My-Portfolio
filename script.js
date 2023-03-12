@@ -502,7 +502,7 @@ close4.addEventListener('click', () => {
   overlay.classList.remove('active');
 });
 
-const form = document.getElementById('form');
+export const form = document.getElementById('form');
 const InputEmail = document.getElementById('email');
 const InputName = document.getElementById('same');
 const InputMessage = document.getElementById('message');

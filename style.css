@@ -50,11 +50,27 @@
 
   @keyframes rotate {
     0% {
-      transform: rotate(0);
+      transform: translateY(-1.8rem);
+    }
+
+    20% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-1.2rem);
+    }
+
+    60% {
+      transform: translateY(0);
+    }
+
+    80% {
+      transform: translateY(-0.6rem);
     }
 
     100% {
-      transform: rotate(360deg);
+      transform: translateY(0);
     }
   }
 
@@ -1056,17 +1072,33 @@
     font-weight: 900;
     text-decoration: none;
     margin-left: 8vw;
-    animation: rotate 1s ease-in 1s 1;
+    animation: rotate 1s ease-out 1s 1;
     transform-origin: top left;
   }
 
   @keyframes rotate {
     0% {
-      transform: rotate(0);
+      transform: translateY(-1.8rem);
+    }
+
+    20% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-1.2rem);
+    }
+
+    60% {
+      transform: translateY(0);
+    }
+
+    80% {
+      transform: translateY(-0.6rem);
     }
 
     100% {
-      transform: rotate(360deg);
+      transform: translateY(0);
     }
   }
 

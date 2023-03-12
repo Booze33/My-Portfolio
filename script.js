@@ -507,6 +507,7 @@ const InputEmail = document.getElementById('email');
 const InputName = document.getElementById('same');
 const InputMessage = document.getElementById('message');
 
+export default form;
 // get item
 const myFormData = JSON.parse(localStorage.getItem('myFormData'));
 

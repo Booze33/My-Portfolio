@@ -7,12 +7,12 @@ menuBtn.addEventListener('click', () => {
 
 const projects = {
   firstDiv: {
-    name: 'Tonic',
-    image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    name: 'To-DO list',
+    image: 'images/Screenshot (5).png',
+    text: 'Make a list of the task your plan to complete daily by adding the task in the input. Then click the add button to add the new task to the list, click the checkbox if task is completed task can also be edited. click refresh at the top of the page to restart the task. Click clear all button to lear all completed task.',
     language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
+    live: 'https://booze33.github.io/Web-pack-To-Do-lsit/dist/',
+    source: 'https://github.com/Booze33/Web-pack-To-Do-lsit.git',
   },
   secondDiv: {
     name: 'Tonic',
@@ -55,7 +55,7 @@ popup.innerHTML = `
 <li><img src="images/Counter.png"></li>
 <li>2015</li>
 </ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio (3).png"></div>
+<div class="div-img"><img src="images/Screenshot (5).png"></div>
 `;
 const text = document.createElement('p');
 text.innerText = projects.firstDiv.text;
@@ -243,17 +243,17 @@ removeFourth.addEventListener('click', () => {
 
 const desktop = {
   desktopFst: {
-    name: 'Tonic',
-    image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    name: 'To-Do List',
+    image: 'images/Screenshot (6).png',
+    text: 'Make a list of the task your plan to complete daily by adding the task in the input. Then click the add button to add the new task to the list, click the checkbox if task is completed task can also be edited. click refresh at the top of the page to restart the task. Click clear all button to lear all completed task.',
     language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
+    live: 'https://booze33.github.io/Web-pack-To-Do-lsit/dist/',
+    source: 'https://github.com/Booze33/Web-pack-To-Do-lsit.git',
   },
   desktopSec: {
     name: 'Multi-Post Stores',
     image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    text: 'Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     language: ['html', 'css', 'javaScript'],
     live: 'https://booze33.github.io/My-Portfolio/',
     source: 'https://github.com/Booze33/My-Portfolio/tree/main',
@@ -293,7 +293,7 @@ task.innerHTML = `
 <li><img src="images/Counter.png"></li>
 <li>2015</li>
 </ul>
-<div class="pen"><img src="images/Snapshoot Portfolio (4).png"></div>
+<div class="pen"><img src="images/Screenshot (6).png"></div>
 <div class="vide">
 <p>${desktop.desktopFst.text}</p>
 <div class="drig">

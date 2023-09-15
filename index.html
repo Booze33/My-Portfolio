@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Noto+Sans+JP&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -41,9 +42,59 @@
             <li class="social-img-li"><a href="https://wellfound.com/profile/"><img src="images/Vector.svg"></a></li>
         </ul>
     </section>
-    <section id="portfolio"></section>
+
+    <section id="portfolio">
+        <div class="first-div projects-div">
+            <div class="desk-div-img"><img src="images/front-1.png" class="front-img"></div>
+            <div>
+                <h2 class="project-name">Land Rover: E-Commerce</h2>
+                <ul class="ul-li">
+                    <li class="cooler">Land Rover</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">Full-Stack</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">2023</li>
+                </ul>
+                <p class="project-text">Make reservation for the rovers. Find the rover that fits your taste and go for a test drive.</p>
+                <ul class="project-tech-list">
+                    <li class="project-tech">react-redux</li>
+                    <li class="project-tech">css</li>
+                    <li class="project-tech">ruby on rails</li>
+                </ul>
+                <button class="project-btn">See Project</button>
+            </div>
+        </div>
+        <div class="pop-up"></div>
+        <div class="overlay"></div>
+    </section>
+
     <section id="about"></section>
-    <section id="contact"></section>
+
+    <section class="contact-form" id="contact">
+        <h1>Contact me</h1>
+        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <form id="form" method="post" action="https://formspree.io/f/mqkolpld">
+            <ul>
+                <li>
+                    <label for="name">
+                    <input type="text" id="same" name="user-name" placeholder="Full Name" maxlength="30" class="storage">
+                    </label>
+                </li>
+                <li>
+                    <label for="mail">
+                    <input type="email" id="email" name="user-email" placeholder="Email" maxlength="30" class="storage">
+                    <div id="error">Email should be in lowercase</div>
+                    </label>
+                </li>
+                <li>
+                    <label for="msg">
+                    <textarea id="message" name="user_message" maxlength="500" class="storage" placeholder="Write your message here"></textarea>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Get in touch</button>
+        </form>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

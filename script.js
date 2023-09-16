@@ -34,7 +34,7 @@ mobileNavThree.addEventListener('click', () => {
   logo.classList.remove('active');
 });
 
-popUp.innerHTML = `
+const firstPop = `
   <div class="pop-up-head">
     <h2 class="project-name">Land Rover: E-Commerce</h2>
     <i class="fa-solid fa-xmark"></i>
@@ -77,18 +77,79 @@ popUp.innerHTML = `
   </div>
 `;
 
-const projectBtn = document.querySelector('.project-btn');
-const PopClose = document.querySelector('.fa-xmark');
+const SecondPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name">Weather App</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Weather</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Front-End</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
+
+    <label for="s1" id="slider1"><img src="images/weather/1694850034176.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/weather/1694850034191.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/weather/1694850034206.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/weather/1694850034228.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/weather/1694850034246.png" class="popup-img"></label>
+  </div>
+
+  <div class="pop-flex">
+    <p class="pop-p">Discover the latest weather conditions and access comprehensive weather updates, detailed forecasts, and a wealth of pertinent information for cities worldwide with our weather app.</p>
+    <div>
+      <ul class="pop-tech-list">
+        <li class="pop-tech">react-redux</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">html</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <button class="project-btn">See Source</button>
+        <button class="project-btn">See Live</button>
+      </div>
+    </div>
+  </div>
+`;
+
+const projectBtn = document.querySelector('.project-btn-1');
 const PopUp = document.querySelector('.pop-up');
 const overlay = document.querySelector('.overlay');
 projectBtn.addEventListener('click', () => {
   body.classList.toggle('active');
   PopUp.classList.toggle('active');
   overlay.classList.toggle('active');
+  popUp.innerHTML = firstPop;
+
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });
 
-PopClose.addEventListener('click', () => {
-  body.classList.remove('active');
+const projectBtnTwo = document.querySelector('.project-btn-2');
+projectBtnTwo.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
   overlay.classList.toggle('active');
-  PopUp.classList.remove('active');
+  popUp.innerHTML = SecondPop;
+
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });

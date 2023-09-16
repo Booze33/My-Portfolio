@@ -153,7 +153,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     pointer-events: all;
-    transition: 0.5s;
+    transition: 0.1s;
     transform: scale(1);
     z-index: 900;
     backdrop-filter: blur(8px);
@@ -362,6 +362,7 @@ body {
     width: 83vw;
     height: 33vw;
     border-radius: 16px;
+    margin: 2rem 0 2rem 0;
   }
 
   .project-name {
@@ -476,173 +477,5 @@ body {
 
   #portfolio {
     margin: 3rem 5vw;
-  }
-}
-
-@media screen and (max-width: 785px) {
-  body.active {
-    overflow: hidden;
-  }
-
-  header {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100vw;
-    height: 5rem;
-    background-color: transparent;
-    border-bottom: #6070ff 1px solid;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(25px);
-    z-index: 2;
-  }
-
-  .logo {
-    font-size: var(--font-size-h1-mobile);
-    font-weight: 700;
-    font-family: var(--font-family);
-    color: #fff;
-    text-shadow: 0 2px 7px #6070ff;
-    text-decoration: none;
-    margin: 0 0 0 -10vw;
-    z-index: -2;
-  }
-
-  .logo.active {
-    color: transparent;
-  }
-
-  .style {
-    font-size: var(--font-size-h1-mobile-2);
-    font-weight: 900;
-    text-shadow: none;
-    color: var(--color);
-    z-index: -2;
-  }
-
-  .nav,
-  .desktop-h1 {
-    display: none;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    width: 40px;
-    height: 30px;
-    position: relative;
-    left: 13vw;
-    top: 1rem;
-    appearance: none;
-    outline: none;
-    background: none;
-    border: none;
-    z-index: 4;
-  }
-
-  .hamburger .bar,
-  .hamburger::after,
-  .hamburger::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: #6070ff;
-    margin: 5px 0;
-    transition: 0.4s;
-    border-radius: 2px;
-  }
-
-  .hamburger.is-active::before {
-    transform: rotate(-45deg) translate(-2px, 3px);
-    background-color: #fff;
-    z-index: 4;
-  }
-
-  .hamburger.is-active::after {
-    transform: rotate(45deg) translate(-2px, -3.5px);
-    background-color: #fff;
-    z-index: 4;
-  }
-
-  .hamburger.is-active .bar {
-    display: none;
-  }
-
-  .mobile-nav {
-    position: fixed;
-    left: 100%;
-    transition: 0.5s;
-  }
-
-  .mobile-nav.is-active {
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    background: #6070ff;
-    width: 100vw;
-    height: 100vh;
-    margin-top: -1.5rem;
-    padding-top: 4rem;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    z-index: 1;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(25px);
-    position: absolute;
-  }
-
-  .mobile-nav a {
-    font-size: 32px;
-    font-family: var(--font-family);
-    color: #fff;
-    margin: 2rem 1rem 0 2rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  #home {
-    background-image: url("images/header-shapes\ mobile@2x.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 70% 30%;
-    padding-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    margin: 1rem 0 0 0;
-    padding: 6rem 8vw;
-  }
-
-  .mobile-h1 {
-    font-size: var(--font-size-h2-desktop);
-    font-family: var(--font-family);
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: #172b4d;
-  }
-
-  .home-p {
-    font-size: var(--font-size-h3);
-    font-family: var(--font-family);
-    color: #344563;
-    margin: -1rem 0 0 0;
-  }
-
-  .home-h3 {
-    font-size: var(--font-size-h3-desktop);
-    font-family: var(--font-family);
-    color: #7f8cff;
-  }
-
-  .social-img {
-    display: flex;
-    margin: -1rem 0 0 -3rem;
-  }
-
-  .social-img-li {
-    margin: 0.5rem;
   }
 }

@@ -212,3 +212,62 @@ projectBtnThree.addEventListener('click', () => {
     PopUp.classList.remove('active');
   });
 });
+
+const toggleBtn = document.querySelector('.fa-angle-one');
+toggleBtn.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show');
+  toggleBtn.classList.toggle('active');
+  languageHide.classList.toggle('active');
+});
+
+const toggleBtnTwo = document.querySelector('.fa-angle-two');
+toggleBtnTwo.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show-two');
+  toggleBtnTwo.classList.toggle('active');
+  languageHide.classList.toggle('active');
+});
+
+const toggleBtnThree = document.querySelector('.fa-angle-three');
+toggleBtnThree.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show-three');
+  toggleBtnThree.classList.toggle('active');
+  languageHide.classList.toggle('active');
+});
+
+const form = document.getElementById('form');
+const InputEmail = document.getElementById('email');
+const InputName = document.getElementById('same');
+const InputMessage = document.getElementById('message');
+
+export default form;
+// get item
+const myFormData = JSON.parse(localStorage.getItem('myFormData'));
+
+if (myFormData) {
+  InputName.value = myFormData.name;
+  InputEmail.value = myFormData.email;
+  InputMessage.value = myFormData.message;
+}
+
+form.addEventListener('input', () => {
+  // get values
+
+  const email = InputEmail.value.trim();
+  const name = InputName.value.trim();
+  const message = InputMessage.value.trim();
+
+  // if value
+  if (!name || !email || !message) {
+    return;
+  }
+
+  // save object
+  const myFormData = {
+    name,
+    email,
+    message,
+  };
+
+  // set item
+  localStorage.setItem('myFormData', JSON.stringify(myFormData));
+});

@@ -20,13 +20,6 @@
   list-style: none;
 }
 
-body {
-  background-color: rgb(247, 248, 250);
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
 @media screen and (max-width: 785px) {
   body.active {
     overflow: hidden;

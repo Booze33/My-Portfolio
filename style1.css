@@ -21,7 +21,7 @@
 }
 
 body {
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(244, 244, 244);
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -367,7 +367,7 @@ body {
     width: 83vw;
     height: 33vw;
     border-radius: 16px;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 5rem 0;
   }
 
   .project-name {
@@ -444,7 +444,36 @@ body {
     background-color: #6070ff;
     border-top-left-radius: 100px;
     height: 800px;
-    padding: 3rem 20vw 0 20vw;
+    padding: 3rem 25vw 0 25vw;
+  }
+
+  .contact-head {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: var(--font-family);
+  }
+
+  .contact-p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--font-family);
+  }
+
+  .contact-btn {
+    background-color: #fff;
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: #6070ff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 0 0 0 13vw;
+  }
+
+  .contact-btn:hover {
+    background-color: transparent;
+    color: #fff;
   }
 
   .contact-form form ul li label input {
@@ -466,6 +495,20 @@ body {
     border: 1px solid #cfd8dc;
   }
 
+  #form {
+    margin: 0 0 0 5vw
+  }
+
+  #error {
+    display: none;
+    color: #ff0000;
+    background-color: #fff;
+    width: 20vw;
+    font-family: var(--font-family);
+    text-align: center;
+    margin: -1rem 0 0 1rem;
+  }
+
   #home {
     margin: 6rem 0 0 0;
     padding: 3rem 10rem;
@@ -482,5 +525,109 @@ body {
 
   #portfolio {
     margin: 3rem 5vw;
+  }
+
+  #about {
+    width: 95%;
+    background-color: #fff;
+    border-top-right-radius: 100px;
+    padding: 2rem 0 2rem 6vw;
+    margin: 2rem 0 0 0;
+    display: grid;
+    grid-template-rows: 1;
+    gap: 3vw;
+    grid-template-columns: 35vw 45vw;
+  }
+
+  .about-first-div {
+    background-color: #fff;
+  }
+
+  .about-head {
+    color: #172b4d;
+    font-family: var(--font-family);
+    font-size: var(--font-size-h2-desktop);
+  }
+
+  .about-p {
+    color: #344563;
+    font-family: var(--font-family);
+    font-size: var(--font-size-h3);
+    margin-top: -1rem;
+  }
+
+  .about-sec-div {
+    background-color: #fff;
+  }
+
+  .toggle {
+    display: flex;
+    width : 95%;
+    justify-content: space-between;
+    background-color: #fff;
+    margin:  1rem 0;
+  }
+
+  .languages {
+    color: #344563;
+    font-family: var(--font-family);
+    font-size: 22px;
+  }
+
+  .fa-angle-right {
+    color: #344563;
+    font-family: var(--font-family);
+    font-size: 30px;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+
+  .fa-angle-one.active,
+  .fa-angle-two.active,
+  .fa-angle-three.active {
+    transform: rotate(90deg) translateX(-1rem);
+  }
+
+  .line-2 {
+    height: 1px;
+    width: 100%;
+    background-color: #cfd8dc;
+  }
+
+  .lang-show,
+  .lang-show-two,
+  .lang-show-three {
+    display: none;
+  }
+
+  .lang-show.active,
+  .lang-show-two.active,
+  .lang-show-three.active {
+    display: block;
+  }
+
+  .display-lang {
+    color: #344563;
+    font-family: var(--font-family);
+    font-size: 20px;
+  }
+
+  #home h1 span.typed-text {
+    font-weight: normal;
+    color: #6070ff;
+  }
+  #home h1 span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  #home h1 span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%, 100%  { background-color: #ccc; }
+    50% { background-color: transparent; }
   }
 }

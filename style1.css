@@ -20,6 +20,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(244, 244, 244);
   overflow-x: hidden;
@@ -423,10 +427,13 @@ body {
 
   .project-btn {
     color: #6070ff;
+    font-family: var(--font-family);
+    font-size: 20px;
     border: #6070ff 2px solid;
     background-color: #fff;
     border-radius: 8px;
     padding: 0.6rem 1rem;
+    text-decoration: none;
   }
 
   .project-btn:hover {
@@ -469,6 +476,7 @@ body {
     border: 1px solid #fff;
     border-radius: 4px;
     margin: 0 0 0 13vw;
+    text-decoration: none;
   }
 
   .contact-btn:hover {
@@ -531,7 +539,7 @@ body {
     width: 95%;
     background-color: #fff;
     border-top-right-radius: 100px;
-    padding: 2rem 0 2rem 6vw;
+    padding: 2rem 0 5rem 6vw;
     margin: 2rem 0 0 0;
     display: grid;
     grid-template-rows: 1;

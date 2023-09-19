@@ -70,8 +70,8 @@ const firstPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <button class="project-btn">See Source</button>
-        <button class="project-btn">See Live</button>
+        <a class="project-btn" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn" href="https://land-rover-e.netlify.app/">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -113,8 +113,8 @@ const SecondPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <button class="project-btn">See Source</button>
-        <button class="project-btn">See Live</button>
+        <a class="project-btn" href="https://github.com/Booze33/weather-react">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn" href="https://weather-web-bp0r.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -156,8 +156,50 @@ const thirdPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <button class="project-btn">See Source</button>
-        <button class="project-btn">See Live</button>
+        <a class="project-btn" href="https://github.com/Booze33/budget-app">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn" href="https://budgetapp-v6n9.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
+      </div>
+    </div>
+  </div>
+`;
+
+const fourthPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name">Recipe App</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Food</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Full-Stack</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
+
+    <label for="s1" id="slider1"><img src="images/recipe/1695155361498.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/recipe/1695155361519.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/recipe/1695155361481.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/recipe/1695155361561.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/recipe/1695155361541.png" class="popup-img"></label>
+  </div>
+
+  <div class="pop-flex">
+    <p class="pop-p">Craft fresh culinary creations and distribute them digitally. You have the option to keep them exclusive and generate a convenient shopping list for your delectable recipes.</p>
+    <div class="pop-tech-con">
+      <ul class="pop-tech-list">
+        <li class="pop-tech">ruby on rails</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">html</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <a class="project-btn" href="https://github.com/rashedarman/rails-recipe-app">See Source<i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>
@@ -203,6 +245,22 @@ projectBtnThree.addEventListener('click', () => {
   PopUp.classList.toggle('active');
   overlay.classList.toggle('active');
   popUp.innerHTML = thirdPop;
+
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
+});
+
+const projectBtnFour = document.querySelector('.project-btn-4');
+projectBtnFour.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
+  overlay.classList.toggle('active');
+  popUp.innerHTML = fourthPop;
 
   const PopClose = document.querySelector('.fa-xmark');
 

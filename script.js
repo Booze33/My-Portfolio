@@ -1,3 +1,10 @@
+const scrollToTopSmoothly = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
 const body = document.querySelector('body');
 const menuBtn = document.querySelector('.hamburger');
 const menuNav = document.querySelector('.mobile-nav');
@@ -11,6 +18,7 @@ menuBtn.addEventListener('click', () => {
   menuNav.classList.toggle('is-active');
   body.classList.toggle('active');
   logo.classList.toggle('active');
+  scrollToTopSmoothly();
 });
 
 mobileNav.addEventListener('click', () => {

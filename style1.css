@@ -31,6 +31,25 @@ body {
   padding: 0;
 }
 
+#home h1 span.typed-text {
+  font-weight: normal;
+  color: #6070ff;
+}
+#home h1 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+#home h1 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%, 100%  { background-color: #ccc; }
+  50% { background-color: transparent; }
+}
+
 @media screen and (min-width: 785px) {
   header {
     position: fixed;
@@ -86,6 +105,7 @@ body {
     color: var(--color);
   }
 
+  .mobile-div-img,
   .hamburger,
   .mobile-nav,
   .mobile-h1 {
@@ -618,24 +638,5 @@ body {
     color: #344563;
     font-family: var(--font-family);
     font-size: 20px;
-  }
-
-  #home h1 span.typed-text {
-    font-weight: normal;
-    color: #6070ff;
-  }
-  #home h1 span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 1s infinite;
-  }
-  #home h1 span.cursor.typing {
-    animation: none;
-  }
-  @keyframes blink {
-    0%, 100%  { background-color: #ccc; }
-    50% { background-color: transparent; }
   }
 }

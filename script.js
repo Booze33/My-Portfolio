@@ -36,7 +36,7 @@ mobileNavThree.addEventListener('click', () => {
 
 const firstPop = `
   <div class="pop-up-head">
-    <h2 class="project-name">Land Rover: E-Commerce</h2>
+    <h2 class="project-name pop-name">Land Rover: E-Commerce</h2>
     <i class="fa-solid fa-xmark"></i>
   </div>
   <ul class="pop-ul-li">

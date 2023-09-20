@@ -562,7 +562,7 @@
   #s3:checked ~ #slider3,
   #s4:checked ~ #slider4,
   #s5:checked ~ #slider5 {
-    transform: translate3d(0%, 0, 0px);
+    transform: translate3d(0, 0, 0);
     box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
   }
 

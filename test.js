@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => { // On DOM Load initiate th
 const googleDocLink = 'https://docs.google.com/document/d/1_Dhl0V6MmNTai2pT5VgtnRe5ZmqvseKbeIFN4geTQHo/edit?usp=sharing';
 
 document.getElementById('downloadButton').addEventListener('click', () => {
+  // eslint-disable-next-line prefer-template
   const downloadLink = googleDocLink + '&export=download';
 
   window.open(downloadLink, '_blank');

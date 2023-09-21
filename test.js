@@ -14,12 +14,25 @@ form.addEventListener('submit', (event) => {
   const NameFill = name.value.trim() !== '';
   const MessageFill = message.value.trim() !== '';
 
-  if (EmailCase && EmailFill && NameFill && MessageFill) {
-    form.submit();
-  } else {
+  error.style.display = 'none';
+  errorTwo.style.display = 'none';
+  errorThree.style.display = 'none';
+
+  if (!EmailFill) {
+    event.preventDefault();
+    errorTwo.style.display = 'block';
+  } else if (!EmailCase) {
+    event.preventDefault();
+    errorTwo.style.display = 'block';
+  }
+
+  if (!NameFill) {
     event.preventDefault();
     error.style.display = 'block';
-    errorTwo.style.display = 'block';
+  }
+
+  if (!MessageFill) {
+    event.preventDefault();
     errorThree.style.display = 'block';
   }
 });

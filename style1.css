@@ -421,14 +421,14 @@ body {
     font-family: var(--font-family);
     font-size: 1.5vw;
     color: #6b778c;
-    margin-right: 9vw;
-    margin-left: -3.5vw;
+    width: 100%;
+    justify-content: flex-start;
     position: relative;
     margin-top: 1rem;
   }
 
   .cooler {
-    margin: 0 0.5rem;
+    margin: 0 2.8rem 0 -2.3rem;
   }
 
   .project-tech-list {
@@ -452,11 +452,11 @@ body {
   .project-btn {
     color: #6070ff;
     font-family: var(--font-family);
-    font-size: 20px;
+    font-size: 1.7vw;
     border: #6070ff 2px solid;
     background-color: #fff;
     border-radius: 8px;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
   }
 

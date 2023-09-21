@@ -78,8 +78,8 @@ const firstPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn" href="https://land-rover-e.netlify.app/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://land-rover-e.netlify.app/">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -87,7 +87,7 @@ const firstPop = `
 
 const SecondPop = `
   <div class="pop-up-head">
-    <h2 class="project-name">Weather App</h2>
+    <h2 class="project-name pop-name">Weather App</h2>
     <i class="fa-solid fa-xmark"></i>
   </div>
   <ul class="pop-ul-li">
@@ -121,8 +121,8 @@ const SecondPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn" href="https://github.com/Booze33/weather-react">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn" href="https://weather-web-bp0r.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/Booze33/weather-react">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://weather-web-bp0r.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -130,7 +130,7 @@ const SecondPop = `
 
 const thirdPop = `
   <div class="pop-up-head">
-    <h2 class="project-name">Expense Tracker</h2>
+    <h2 class="project-name pop-name">Expense Tracker</h2>
     <i class="fa-solid fa-xmark"></i>
   </div>
   <ul class="pop-ul-li">
@@ -164,8 +164,8 @@ const thirdPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn" href="https://github.com/Booze33/budget-app">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn" href="https://budgetapp-v6n9.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/Booze33/budget-app">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://budgetapp-v6n9.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -173,7 +173,7 @@ const thirdPop = `
 
 const fourthPop = `
   <div class="pop-up-head">
-    <h2 class="project-name">Recipe App</h2>
+    <h2 class="project-name pop-name">Recipe App</h2>
     <i class="fa-solid fa-xmark"></i>
   </div>
   <ul class="pop-ul-li">
@@ -207,7 +207,7 @@ const fourthPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn" href="https://github.com/rashedarman/rails-recipe-app">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/rashedarman/rails-recipe-app">See Source<i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>

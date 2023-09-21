@@ -392,14 +392,16 @@
     padding: 1rem 0;
   }
 
-  #error {
+  #error,
+  #error-2,
+  #error-3 {
     color: red;
     font-size: 12px;
     font-family: var(--font-family);
     background-color: #fff;
     padding: 2px 0 2px 5px;
     border-radius: 4px;
-    margin-top: -10px;
+    margin-top: -7px;
     margin-left: -5vw;
     width: 11rem;
     display: none;

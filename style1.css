@@ -531,7 +531,9 @@ body {
     margin: 0 0 0 5vw;
   }
 
-  #error {
+  #error,
+  #error-2,
+  #error-3 {
     display: none;
     color: #f00;
     background-color: #fff;

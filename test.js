@@ -2,14 +2,25 @@
 import form from './script.js';
 
 const email = document.getElementById('email');
+const name = document.getElementById('same');
+const message = document.getElementById('message');
 const error = document.getElementById('error');
+const errorTwo = document.getElementById('error-2');
+const errorThree = document.getElementById('error-3');
 
 form.addEventListener('submit', (event) => {
-  if (email.value === email.value.toLowerCase()) {
+  const EmailCase = email.value === email.value.toLowerCase();
+  const EmailFill = email.value.trim() !== '';
+  const NameFill = name.value.trim() !== '';
+  const MessageFill = message.value.trim() !== '';
+
+  if (EmailCase && EmailFill && NameFill && MessageFill) {
     form.submit();
   } else {
     event.preventDefault();
     error.style.display = 'block';
+    errorTwo.style.display = 'block';
+    errorThree.style.display = 'block';
   }
 });
 
@@ -19,7 +30,7 @@ const cursorSpan = document.querySelector('.cursor');
 const textArray = ['Glad too see you', 'I am a Software developer', 'I am a FullStack Developer', 'I am a Frontend Developer'];
 const typingDelay = 200;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 2000;
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -49,7 +60,7 @@ function type() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => { // On DOM Load initiate the effect
+document.addEventListener('DOMContentLoaded', () => {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 

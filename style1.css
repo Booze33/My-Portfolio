@@ -4,8 +4,8 @@
   --font-size-h1-mobile: 38px;
   --font-size-h1-mobile-2: 40px;
   --font-size-h1-desktop: 48px;
-  --font-size-h2: 28px;
-  --font-size-h2-desktop: 32px;
+  --font-size-h2: 26px;
+  --font-size-h2-desktop: 30px;
   --font-size-h3: 15px;
   --font-size-h3-desktop: 16px;
   --font-size-logo: 18px;
@@ -88,8 +88,10 @@ body {
   }
 
   .nav {
+    display: flex;
+    justify-content: end;
     width: 50vw;
-    margin: 0 -5rem 0 0;
+    margin: 0 -6rem 0 0;
     padding: 1rem 0 0 0;
   }
 

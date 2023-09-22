@@ -18,6 +18,7 @@
 *::after,
 *::before {
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -253,7 +254,7 @@ body {
     font-size: 70px;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 4s ease;
+    transition: transform 3s ease;
   }
 
   #s1:checked ~ #slider1,
@@ -468,6 +469,10 @@ body {
     background-color: #6070ff;
     border-radius: 8px;
     padding: 0.6rem 1rem;
+  }
+
+  .btn-2 {
+    font-size: 1.5vw;
   }
 
   .contact-form {

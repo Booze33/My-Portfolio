@@ -78,8 +78,8 @@ const firstPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn btn-2" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn btn-2" href="https://land-rover-e.netlify.app/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://land-rover-e.netlify.app/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -121,8 +121,8 @@ const SecondPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn btn-2" href="https://github.com/Booze33/weather-react">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn btn-2" href="https://weather-web-bp0r.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/Booze33/weather-react" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://weather-web-bp0r.onrender.com/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -164,8 +164,8 @@ const thirdPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn btn-2" href="https://github.com/Booze33/budget-app">See Source<i class="fa-brands fa-github"></i></a>
-        <a class="project-btn btn-2" href="https://budgetapp-v6n9.onrender.com/">See Live <i class="fa-solid fa-play"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/Booze33/budget-app" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://budgetapp-v6n9.onrender.com/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
       </div>
     </div>
   </div>
@@ -207,7 +207,7 @@ const fourthPop = `
       </ul>
       <div class="line"></div>
       <div class="source">
-        <a class="project-btn btn-2" href="https://github.com/rashedarman/rails-recipe-app">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://github.com/rashedarman/rails-recipe-app" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>

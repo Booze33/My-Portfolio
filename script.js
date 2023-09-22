@@ -1,505 +1,303 @@
+const scrollToTopSmoothly = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
+const body = document.querySelector('body');
 const menuBtn = document.querySelector('.hamburger');
 const menuNav = document.querySelector('.mobile-nav');
+const logo = document.querySelector('.logo');
+const popUp = document.querySelector('.pop-up');
+const mobileNav = document.querySelector('.tag-1');
+const mobileNavTwo = document.querySelector('.tag-2');
+const mobileNavThree = document.querySelector('.tag-3');
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('is-active');
   menuNav.classList.toggle('is-active');
+  body.classList.toggle('active');
+  logo.classList.toggle('active');
+  scrollToTopSmoothly();
 });
 
-const projects = {
-  firstDiv: {
-    name: 'To-DO list',
-    image: 'images/Screenshot (5).png',
-    text: 'Make a list of the task your plan to complete daily by adding the task in the input. Then click the add button to add the new task to the list, click the checkbox if task is completed task can also be edited. click refresh at the top of the page to restart the task. Click clear all button to lear all completed task.',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/Web-pack-To-Do-lsit/dist/',
-    source: 'https://github.com/Booze33/Web-pack-To-Do-lsit.git',
-  },
-  secondDiv: {
-    name: 'Tonic',
-    image: 'images/Snapshoot Portfolio.png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-  thirdDiv: {
-    name: 'Tonic',
-    image: 'images/Snapshoot Portfolio (1).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-  fourthDiv: {
-    name: 'Tonic',
-    image: 'images/Snapshoot Portfolio (2).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-};
-
-// first div
-const click = document.querySelector('.click');
-const popup = document.querySelector('.popup');
-popup.innerHTML = `
-<div class="head">
-<h2>Tonic</h2>
-<div class="bar-1"></div>
-</div>
-<ul class="ul-li">
-<li class="cooler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="div-img"><img src="images/Screenshot (5).png"></div>
-`;
-const text = document.createElement('p');
-text.innerText = projects.firstDiv.text;
-text.className = 'text';
-popup.appendChild(text);
-const links = document.createElement('div');
-links.className = 'nutton';
-links.innerHTML = `
-<ul class="sec-list">
-<li>html</li>
-<li>css</li>
-<li>javaScript</li>
-</ul>
-<div class="link-btn">
-<div class="divide"></div>
-<button class="link"><a href="${projects.firstDiv.live}">See Live<img src="images/Icon.svg"></a></button>
-<button class="link"><a href="${projects.firstDiv.source}">See Source<img src="images/Vector (4).svg"></a></button>
-</div>
-`;
-popup.appendChild(links);
-const remove = document.querySelector('.bar-1');
-const overlay2 = document.querySelector('.overlay-2');
-
-click.addEventListener('click', () => {
-  click.classList.add('active');
-  overlay2.classList.add('active');
-  popup.classList.add('active');
+mobileNav.addEventListener('click', () => {
+  menuBtn.classList.remove('is-active');
+  menuNav.classList.remove('is-active');
+  body.classList.remove('active');
+  logo.classList.remove('active');
 });
 
-remove.addEventListener('click', () => {
-  remove.classList.remove('active');
-  popup.classList.remove('active');
-  overlay2.classList.remove('active');
+mobileNavTwo.addEventListener('click', () => {
+  menuBtn.classList.remove('is-active');
+  menuNav.classList.remove('is-active');
+  body.classList.remove('active');
+  logo.classList.remove('active');
 });
 
-// second div
-const clickSecond = document.querySelector('.click-2');
-const popupSecond = document.querySelector('.popup-2');
-popupSecond.innerHTML = `
-<div class="head">
-<h2>Tonic</h2>
-<div class="bar-1 bar-2"></div>
-</div>
-<ul class="ul-li">
-<li class="cooler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio.png"></div>
-`;
-const textSecond = document.createElement('p');
-textSecond.innerText = projects.firstDiv.text;
-textSecond.className = 'text';
-popupSecond.appendChild(textSecond);
-const linksSecond = document.createElement('div');
-linksSecond.className = 'nutton';
-linksSecond.innerHTML = `
-<ul class="sec-list">
-<li>html</li>
-<li>css</li>
-<li>javaScript</li>
-</ul>
-<div class="link-btn">
-<div class="divide"></div>
-<button class="link"><a href="${projects.firstDiv.live}">See Live<img src="images/Icon.svg"></a></button>
-<button class="link"><a href="${projects.firstDiv.source}">See Source<img src="images/Vector (4).svg"></a></button>
-</div>
-`;
-popupSecond.appendChild(linksSecond);
-const removeSecond = document.querySelector('.bar-2');
-
-clickSecond.addEventListener('click', () => {
-  clickSecond.classList.add('active');
-  popupSecond.classList.add('active');
-  overlay2.classList.add('active');
-});
-removeSecond.addEventListener('click', () => {
-  removeSecond.classList.remove('active');
-  popupSecond.classList.remove('active');
-  overlay2.classList.remove('active');
+mobileNavThree.addEventListener('click', () => {
+  menuBtn.classList.remove('is-active');
+  menuNav.classList.remove('is-active');
+  body.classList.remove('active');
+  logo.classList.remove('active');
 });
 
-// third div
-const clickThird = document.querySelector('.click-3');
-const popupThird = document.querySelector('.popup-3');
-popupThird.innerHTML = `
-<div class="head">
-<h2>Tonic</h2>
-<div class="bar-1 bar-3"></div>
-</div>
-<ul class="ul-li">
-<li class="cooler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio (3).png"></div>
-`;
-const textThird = document.createElement('p');
-textThird.innerText = projects.firstDiv.text;
-textThird.className = 'text';
-popupThird.appendChild(textThird);
-const linksThird = document.createElement('div');
-linksThird.className = 'nutton';
-linksThird.innerHTML = `
-<ul class="sec-list">
-<li>html</li>
-<li>css</li>
-<li>javaScript</li>
-</ul>
-<div class="link-btn">
-<div class="divide"></div>
-<button class="link"><a href="${projects.firstDiv.live}">See Live<img src="images/Icon.svg"></a></button>
-<button class="link"><a href="${projects.firstDiv.source}">See Source<img src="images/Vector (4).svg"></a></button>
-</div>
-`;
-popupThird.appendChild(linksThird);
-const removeThird = document.querySelector('.bar-3');
+const firstPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name pop-name">Land Rover: E-Commerce</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Land Rover</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Full-Stack</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
 
-clickThird.addEventListener('click', () => {
-  clickThird.classList.add('active');
-  popupThird.classList.add('active');
-  overlay2.classList.add('active');
-});
-removeThird.addEventListener('click', () => {
-  removeThird.classList.remove('active');
-  popupThird.classList.remove('active');
-  overlay2.classList.remove('active');
-});
+    <label for="s1" id="slider1"><img src="images/front-1.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/1694684248903.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/1694684248913.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/1694684248926.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/1694684248942.png" class="popup-img"></label>
+  </div>
 
-// fourth div
-const clickFourth = document.querySelector('.click-4');
-const popupFourth = document.querySelector('.popup-4');
-popupFourth.innerHTML = `
-<div class="head">
-<h2>Tonic</h2>
-<div class="bar-1 bar-4"></div>
-</div>
-<ul class="ul-li">
-<li class="cooler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="div-img"><img src="images/Snapshoot Portfolio.png"></div>
-`;
-const textFourth = document.createElement('p');
-textFourth.innerText = projects.firstDiv.text;
-textFourth.className = 'text';
-popupFourth.appendChild(textFourth);
-const linksFourth = document.createElement('div');
-linksFourth.className = 'nutton';
-linksFourth.innerHTML = `
-<ul class="sec-list">
-<li>html</li>
-<li>css</li>
-<li>javaScript</li>
-</ul>
-<div class="link-btn">
-<div class="divide"></div>
-<button class="link"><a href="${projects.firstDiv.live}">See Live<img src="images/Icon.svg"></a></button>
-<button class="link"><a href="${projects.firstDiv.source}">See Source<img src="images/Vector (4).svg"></a></button>
-</div>
-`;
-popupFourth.appendChild(linksFourth);
-const removeFourth = document.querySelector('.bar-4');
-const body = document.querySelector('body');
-
-clickFourth.addEventListener('click', () => {
-  clickFourth.classList.add('active');
-  popupFourth.classList.add('active');
-  overlay2.classList.add('active');
-});
-removeFourth.addEventListener('click', () => {
-  removeFourth.classList.remove('active');
-  popupFourth.classList.remove('active');
-  overlay2.classList.remove('active');
-});
-
-// Desktop popUp
-
-const desktop = {
-  desktopFst: {
-    name: 'To-Do List',
-    image: 'images/Screenshot (6).png',
-    text: 'Make a list of the task your plan to complete daily by adding the task in the input. Then click the add button to add the new task to the list, click the checkbox if task is completed task can also be edited. click refresh at the top of the page to restart the task. Click clear all button to lear all completed task.',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/Web-pack-To-Do-lsit/dist/',
-    source: 'https://github.com/Booze33/Web-pack-To-Do-lsit.git',
-  },
-  desktopSec: {
-    name: 'Multi-Post Stores',
-    image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-  desktopTrd: {
-    name: 'Facebook 360',
-    image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-  desktopFth: {
-    name: 'Uber Navigation',
-    image: 'images/Snapshoot Portfolio (3).png',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    language: ['html', 'css', 'javaScript'],
-    live: 'https://booze33.github.io/My-Portfolio/',
-    source: 'https://github.com/Booze33/My-Portfolio/tree/main',
-  },
-};
-
-// desktop first div
-
-const post = document.querySelector('.this');
-const task = document.createElement('div');
-task.className = 'task1';
-task.innerHTML = `
-<div class="cross">
-  <h2 class="h2-tag">${desktop.desktopFst.name}</h2>
-  <div class="ex"></div>
-</div>
-<ul class="ul-list">
-<li class="coler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="pen"><img src="images/Screenshot (6).png"></div>
-<div class="vide">
-<p>${desktop.desktopFst.text}</p>
-<div class="drig">
-  <div class="small">
-  <div class="inner">
-    <ul class="double">
-      <li>html</li>
-      <li>css</li>
-      <li>javaScript</li>
-    </ul>
-    <ul class="double">
-      <li>github</li>
-      <li>ruby</li>
-      <li>bootstrap</li>
-    </ul>
-    </div>
-    <div class="top-link">
-    <div class="blue"></div>
-    <button class="desk-live"><a href="${desktop.desktopFst.live}" alt="">See Live <img src="images/Icon.svg"></a></button>
-    <button class="desk-live"><a href="${desktop.desktopFst.source}" alt=""></a>See Source <img src="images/Vector (4).svg"></button>
-    </div>
+  <div class="pop-flex">
+    <p class="pop-p">Land Rover - our brand-new E-commerce App, designed to redefine your car buying experience! Whether you're an adventure seeker, a tech enthusiast, or simply in search of luxury, our app has been meticulously crafted to cater to your every need.</p>
+    <div class="pop-tech-con">
+      <ul class="pop-tech-list">
+        <li class="pop-tech">react-redux</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">ruby on rails</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <a class="project-btn btn-2" href="https://github.com/VelzckC0D3/Land-Rover-E-Commerce" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://land-rover-e.netlify.app/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
+      </div>
     </div>
   </div>
-</div>
 `;
-body.append(task);
 
+const SecondPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name pop-name">Weather App</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Weather</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Front-End</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
+
+    <label for="s1" id="slider1"><img src="images/weather/1694850034176.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/weather/1694850034191.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/weather/1694850034206.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/weather/1694850034228.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/weather/1694850034246.png" class="popup-img"></label>
+  </div>
+
+  <div class="pop-flex">
+    <p class="pop-p">Discover the latest weather conditions and access comprehensive weather updates, detailed forecasts, and a wealth of pertinent information for cities worldwide with our weather app.</p>
+    <div class="pop-tech-con">
+      <ul class="pop-tech-list">
+        <li class="pop-tech">react-redux</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">html</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <a class="project-btn btn-2" href="https://github.com/Booze33/weather-react" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://weather-web-bp0r.onrender.com/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
+      </div>
+    </div>
+  </div>
+`;
+
+const thirdPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name pop-name">Expense Tracker</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Expense</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Full-Stack</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
+
+    <label for="s1" id="slider1"><img src="images/expense/1694852257085.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/expense/1694852257072.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/expense/1694852257057.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/expense/1694852257045.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/expense/1694852257034.png" class="popup-img"></label>
+  </div>
+
+  <div class="pop-flex">
+    <p class="pop-p">An intuitive budgeting app designed to streamline your spending management. Easily categorize your expenses, such as 'Food' or 'Transport,' and effortlessly track your transactions within each category to gain insight into your overall expenditure.</p>
+    <div class="pop-tech-con">
+      <ul class="pop-tech-list">
+        <li class="pop-tech">ruby on rails</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">html</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <a class="project-btn btn-2" href="https://github.com/Booze33/budget-app" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+        <a class="project-btn btn-2" href="https://budgetapp-v6n9.onrender.com/" target="_blank" rel="noopener">See Live <i class="fa-solid fa-play"></i></a>
+      </div>
+    </div>
+  </div>
+`;
+
+const fourthPop = `
+  <div class="pop-up-head">
+    <h2 class="project-name pop-name">Recipe App</h2>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <ul class="pop-ul-li">
+    <li class="pop-cooler">Food</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">Full-Stack</li>
+    <li class="pop-cooler"><img src="images/Counter.png"></li>
+    <li class="pop-cooler">2023</li>
+  </ul>
+  <div id="slider">
+    <input type="radio" class="radio" name="slider" id="s1" checked>
+    <input type="radio" class="radio" name="slider" id="s2">
+    <input type="radio" class="radio" name="slider" id="s3">
+    <input type="radio" class="radio" name="slider" id="s4">
+    <input type="radio" class="radio" name="slider" id="s5">
+
+    <label for="s1" id="slider1"><img src="images/recipe/1695155361498.png" class="popup-img"></label>
+    <label for="s2" id="slider2"><img src="images/recipe/1695155361519.png" class="popup-img"></label>
+    <label for="s3" id="slider3"><img src="images/recipe/1695155361481.png" class="popup-img"></label>
+    <label for="s4" id="slider4"><img src="images/recipe/1695155361561.png" class="popup-img"></label>
+    <label for="s5" id="slider5"><img src="images/recipe/1695155361541.png" class="popup-img"></label>
+  </div>
+
+  <div class="pop-flex">
+    <p class="pop-p">Craft fresh culinary creations and distribute them digitally. You have the option to keep them exclusive and generate a convenient shopping list for your delectable recipes.</p>
+    <div class="pop-tech-con">
+      <ul class="pop-tech-list">
+        <li class="pop-tech">ruby on rails</li>
+        <li class="pop-tech">css</li>
+        <li class="pop-tech">html</li>
+      </ul>
+      <div class="line"></div>
+      <div class="source">
+        <a class="project-btn btn-2" href="https://github.com/rashedarman/rails-recipe-app" target="_blank" rel="noopener">See Source<i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+`;
+
+const projectBtn = document.querySelector('.project-btn-1');
+const PopUp = document.querySelector('.pop-up');
 const overlay = document.querySelector('.overlay');
-post.addEventListener('click', () => {
-  post.classList.add('active');
-  task.classList.add('active');
-  overlay.classList.add('active');
-});
-const close = document.querySelector('.ex');
-close.addEventListener('click', () => {
-  close.classList.remove('active');
-  task.classList.remove('active');
-  overlay.classList.remove('active');
+projectBtn.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
+  overlay.classList.toggle('active');
+  popUp.innerHTML = firstPop;
+
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });
 
-// desktop second div
-const post2 = document.querySelector('.this-2');
-const task2 = document.createElement('div');
-task2.className = 'task2';
-task2.innerHTML = `
-<div class="cross">
-  <h2 class="h2-tag">${desktop.desktopSec.name}</h2>
-  <div class="ex ex-2"></div>
-</div>
-<ul class="ul-list">
-<li class="coler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="pen"><img src="images/Snapshoot Portfolio (2).png"></div>
-<div class="vide">
-<p>${desktop.desktopFst.text}</p>
-<div class="drig">
-  <div class="small">
-  <div class="inner">
-    <ul class="double">
-      <li>html</li>
-      <li>css</li>
-      <li>javaScript</li>
-    </ul>
-    <ul class="double">
-      <li>github</li>
-      <li>ruby</li>
-      <li>bootstrap</li>
-    </ul>
-    </div>
-    <div class="top-link">
-    <div class="blue"></div>
-    <button class="desk-live"><a href="${desktop.desktopFst.live}" alt="">See Live <img src="images/Icon.svg"></a></button>
-    <button class="desk-live"><a href="${desktop.desktopFst.source}" alt=""></a>See Source <img src="images/Vector (4).svg"></button>
-    </div>
-    </div>
-  </div>
-</div>
-`;
-body.append(task2);
+const projectBtnTwo = document.querySelector('.project-btn-2');
+projectBtnTwo.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
+  overlay.classList.toggle('active');
+  popUp.innerHTML = SecondPop;
 
-post2.addEventListener('click', () => {
-  post2.classList.add('active');
-  task2.classList.add('active');
-  overlay.classList.add('active');
-});
-const close2 = document.querySelector('.ex-2');
-close2.addEventListener('click', () => {
-  close2.classList.remove('active');
-  task2.classList.remove('active');
-  overlay.classList.remove('active');
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });
 
-// desktop third div
-const post3 = document.querySelector('.this-3');
-const task3 = document.createElement('div');
-task3.className = 'task3';
-task3.innerHTML = `
-<div class="cross">
-  <h2 class="h2-tag">${desktop.desktopTrd.name}</h2>
-  <div class="ex ex-3"></div>
-</div>
-<ul class="ul-list">
-<li class="coler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="pen"><img src="images/Snapshoot Portfolio (4).png"></div>
-<div class="vide">
-<p>${desktop.desktopFst.text}</p>
-<div class="drig">
-  <div class="small">
-  <div class="inner">
-    <ul class="double">
-      <li>html</li>
-      <li>css</li>
-      <li>javaScript</li>
-    </ul>
-    <ul class="double">
-      <li>github</li>
-      <li>ruby</li>
-      <li>bootstrap</li>
-    </ul>
-    </div>
-    <div class="top-link">
-    <div class="blue"></div>
-    <button class="desk-live"><a href="${desktop.desktopFst.live}" alt="">See Live <img src="images/Icon.svg"></a></button>
-    <button class="desk-live"><a href="${desktop.desktopFst.source}" alt=""></a>See Source <img src="images/Vector (4).svg"></button>
-    </div>
-    </div>
-  </div>
-</div>
-`;
-body.append(task3);
+const projectBtnThree = document.querySelector('.project-btn-3');
+projectBtnThree.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
+  overlay.classList.toggle('active');
+  popUp.innerHTML = thirdPop;
 
-post3.addEventListener('click', () => {
-  post3.classList.add('active');
-  task3.classList.add('active');
-  overlay.classList.add('active');
-});
-const close3 = document.querySelector('.ex-3');
-close3.addEventListener('click', () => {
-  close3.classList.remove('active');
-  task3.classList.remove('active');
-  overlay.classList.remove('active');
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });
 
-// desktop fourth div
-const post4 = document.querySelector('.this-4');
-const task4 = document.createElement('div');
-task4.className = 'task4';
-task4.innerHTML = `
-<div class="cross">
-  <h2 class="h2-tag">${desktop.desktopFth.name}</h2>
-  <div class="ex ex-4"></div>
-</div>
-<ul class="ul-list">
-<li class="coler">CANOPY</li>
-<li><img src="images/Counter.png"></li>
-<li>Back End Dev</li>
-<li><img src="images/Counter.png"></li>
-<li>2015</li>
-</ul>
-<div class="pen"><img src="images/Snapshoot Portfolio (4).png"></div>
-<div class="vide">
-<p>${desktop.desktopFst.text}</p>
-<div class="drig">
-  <div class="small">
-  <div class="inner">
-    <ul class="double">
-      <li>html</li>
-      <li>css</li>
-      <li>javaScript</li>
-    </ul>
-    <ul class="double">
-      <li>github</li>
-      <li>ruby</li>
-      <li>bootstrap</li>
-    </ul>
-    </div>
-    <div class="top-link">
-    <div class="blue"></div>
-    <button class="desk-live"><a href="${desktop.desktopFst.live}" alt="">See Live <img src="images/Icon.svg"></a></button>
-    <button class="desk-live"><a href="${desktop.desktopFst.source}" alt=""></a>See Source <img src="images/Vector (4).svg"></button>
-    </div>
-    </div>
-  </div>
-</div>
-`;
-body.append(task4);
+const projectBtnFour = document.querySelector('.project-btn-4');
+projectBtnFour.addEventListener('click', () => {
+  body.classList.toggle('active');
+  PopUp.classList.toggle('active');
+  overlay.classList.toggle('active');
+  popUp.innerHTML = fourthPop;
 
-post4.addEventListener('click', () => {
-  post4.classList.add('active');
-  task4.classList.add('active');
-  overlay.classList.add('active');
+  const PopClose = document.querySelector('.fa-xmark');
+
+  PopClose.addEventListener('click', () => {
+    body.classList.remove('active');
+    overlay.classList.toggle('active');
+    PopUp.classList.remove('active');
+  });
 });
-const close4 = document.querySelector('.ex-4');
-close4.addEventListener('click', () => {
-  close4.classList.remove('active');
-  task4.classList.remove('active');
-  overlay.classList.remove('active');
+
+const toggleBtn = document.querySelector('.fa-angle-one');
+toggleBtn.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show');
+  toggleBtn.classList.toggle('active');
+  languageHide.classList.toggle('active');
+});
+
+const toggleBtnTwo = document.querySelector('.fa-angle-two');
+toggleBtnTwo.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show-two');
+  toggleBtnTwo.classList.toggle('active');
+  languageHide.classList.toggle('active');
+});
+
+const toggleBtnThree = document.querySelector('.fa-angle-three');
+toggleBtnThree.addEventListener('click', () => {
+  const languageHide = document.querySelector('.lang-show-three');
+  toggleBtnThree.classList.toggle('active');
+  languageHide.classList.toggle('active');
 });
 
 const form = document.getElementById('form');

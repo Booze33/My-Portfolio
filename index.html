@@ -4,275 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="images/Bazaart_20230921_080100_474.png" type="image/png">
+    <title>Tisloh Tebe | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Noto+Sans+JP&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-    <a href="" class="logo">My Logo</a>
-    <!Desktop version>
-    <nav class="desktop-menu">
-    <ul>
-        <li>Portfolio</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
-    </nav>
-    <!Desktop version end>
-    <nav class="menu-nav">
-         <button class="hamburger">
+    <header>
+        <a class="logo" href="#home"><span class="style">T</span>E<span class="style">B</span>E</a>
+        <nav class="nav">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <button class="hamburger">
             <div class="bar"></div>
             </button>
         </nav>
-        <nav class="mobile-nav">
-            <a href="#portfolio" class="tag">Portfolio</a>
-            <a href="#about" class="tag">About</a>
-            <a href="#contact" class="tag">Contact</a>
-        </nav>
     </header>
-    <section id="first-sec" >
-        <h1 class="mobile-h1">I'm Tebe <br> Glad to see <br> you!</h1>
-        <h1 class="desktop-h1">I'm Tebe <br> Glad to see you!</h1>
-        <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <h3>LET'S CONNECT</h3>
+    <nav class="mobile-nav">
+        <a href="#portfolio" class="tag tag-1">Portfolio</a>
+        <a href="#about" class="tag tag-2">About</a>
+        <a href="#contact" class="tag tag-3">Contact</a>
+    </nav>
+    <section id="home">
+        <h1 class="desktop-h1">Hey, I'm Tebe <br><span class="typed-text"></span><span class="cursor"></span></h1>
+        <p class="home-p">I am a professional software developer who is always available to render services to clients🤝. I am passionate about coding and happy to be joining the world of programming✨. I am open to work for you, contact me.</p>
+        <h3 class="home-h3">LET'S CONNECT</h3>
         <ul class="social-img">
-            <li><a href=""><img src="images/Vector (3).svg"></></li>
-            <li><a href=""><img src="images/Linkedin icon.svg"></></li>
-            <li><a href=""><img src="images/Vector (2).svg"><a></li>
-            <li><a href=""><img src="images/Vector (1).svg"></a></li>
-            <li><a href=""><img src="images/Vector.svg"></a></li>
+            <li class="social-img-li"><a href="https://twitter.com/Tebe95645832" target="_blank" rel="noopener"><img src="images/Vector (3).svg"></a></li>
+            <li class="social-img-li"><a href="https://www.linkedin.com/in/tebe-tisloh-847956225" target="_blank" rel="noopener"><img src="images/Linkedin icon.svg"></a></li>
+            <li class="social-img-li"><a href="https://medium.com/@ttisloh" target="_blank" rel="noopener"><img src="images/Vector (2).svg"><a></li>
+            <li class="social-img-li"><a href="https://github.com/Booze33" target="_blank" rel="noopener"><img src="images/Vector (1).svg"></a></li>
+            <li class="social-img-li"><a href="https://wellfound.com/u/pam-tisloh-tebe" target="_blank" rel="noopener"><img src="images/Vector.svg"></a></li>
         </ul>
     </section>
-    <section class="work-sec" id="portfolio">
-        <div class="first-div">
-            <div class="div-img"><img src="images/Screenshot (6).png"></div>
-            <h2>To-Do List</h2>
-            <ul class="ul-li">
-                <li class="cooler">CANOPY</li>
-                <li><img src="images/Counter.png"></li>
-                <li>Back End Dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li>2015</li>
-            </ul>
-            <p class="div-p">Keep record of your daily task. Set your daily goals so you can achieve it.</p>
-            <ul class="sec-list">
-                <li>html</li>
-                <li>css</li>
-                <li>javaScript</li>
-            </ul>
-            <button class="click">See Project</button>
+
+    <section id="portfolio">
+        <div class="first-div projects-div">
+            <div class="desk-div-img"><img src="images/front-1.png" class="front-img"></div>
+            <div>
+                <h2 class="project-name">Land Rover: E-Commerce</h2>
+                <ul class="ul-li">
+                    <li class="cooler">Land Rover</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">Full-Stack</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">2023</li>
+                </ul>
+                <p class="project-text">Make reservations for the rovers. Find the rover that fits your taste and go for a test drive.</p>
+                <ul class="project-tech-list">
+                    <li class="project-tech">react-redux</li>
+                    <li class="project-tech">css</li>
+                    <li class="project-tech">ruby on rails</li>
+                </ul>
+                <button class="mobile-btn project-btn project-btn-1">See Project</button>
+            </div>
         </div>
-        <div class="overlay-2"></div>
-        <div class="popup"></div>
-        <div class="popup-2"></div>
-        <div class="popup-3"></div>
-        <div class="popup-4"></div>
-        <div class="second-div">
-            <div class="div-img"><img src="images/Snapshoot Portfolio.png"></div>
-            <h2>Multi-Post <br> Stories</h2>
-            <ul class="ul-li">
-                <li class="cooler">CANOPY</li>
-                <li><img src="images/Counter.png"></li>
-                <li>Back End Dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li>2015</li>
-            </ul>
-            <p class="div-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <ul class="sec-list">
-                <li>html</li>
-                <li>css</li>
-                <li>javaScript</li>
-            </ul>
-            <button class="click-2">See Project</button>
+
+        <div class="first-div projects-div">
+            <div class="mobile-div-img"><img src="images/weather.png" class="front-img"></div>
+            <div>
+                <h2 class="project-name">Weather App</h2>
+                <ul class="ul-li">
+                    <li class="cooler">Weather</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">Front-End</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">2023</li>
+                </ul>
+                <p class="project-text">Search for the weather conditions and access weather updates, detailed forecasts, and a wealth of pertinent information for cities worldwide. </p>
+                <ul class="project-tech-list">
+                    <li class="project-tech">react-redux</li>
+                    <li class="project-tech">css</li>
+                    <li class="project-tech">html</li>
+                </ul>
+                <button class="mobile-btn project-btn project-btn-2">See Project</button>
+            </div>
+            <div class="desk-div-img clear"><img src="images/weather.png" class="front-img"></div>
         </div>
-        <div class="third-div">
-            <div class="div-img"><img src="images/Snapshoot Portfolio (1).png"></div>
-            <h2>Tonic</h2>
-            <ul class="ul-li">
-                <li class="cooler">CANOPY</li>
-                <li><img src="images/Counter.png"></li>
-                <li>Back End Dev</li>
-                <li><img src="images/Counter.png"></li>
-                <li>2015</li>
-            </ul>
-            <p class="div-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-            <ul class="sec-list">
-                <li>html</li>
-                <li>css</li>
-                <li>javaScript</li>
-            </ul>
-            <button class="click-3">See Project</button>
+
+        <div class="first-div projects-div">
+            <div class="desk-div-img"><img src="images/expense/1694852257085.png" class="front-img"></div>
+            <div>
+                <h2 class="project-name">Expense Tracker</h2>
+                <ul class="ul-li">
+                    <li class="cooler">Expense</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">Full-Stack</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">2023</li>
+                </ul>
+                <p class="project-text">A budget app to track spending by categories like 'Food' or 'Transport,' helping you manage your expenses effortlessly.</p>
+                <ul class="project-tech-list">
+                    <li class="project-tech">html</li>
+                    <li class="project-tech">css</li>
+                    <li class="project-tech">ruby on rails</li>
+                </ul>
+                <button class="mobile-btn project-btn project-btn-3">See Project</button>
+            </div>
         </div>
-        <div class="fourth-div"><div class="div-img"><img src="images/Snapshoot Portfolio (2).png"></div>
-        <h2>Multi-Post <br> Stories </h2>
-        <ul class="ul-li">
-            <li class="cooler">CANOPY</li>
-            <li><img src="images/Counter.png"></li>
-            <li>Back End Dev</li>
-            <li><img src="images/Counter.png"></li>
-            <li>2015</li>
-        </ul>
-        <p class="div-p">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        <ul class="sec-list">
-            <li>html</li>
-            <li>css</li>
-            <li>javaScript</li>
-        </ul>
-        <button class="click-4">See Project</button></div>
-    </section>
-    <!Desktop version>
-    <section class="desktop-work-sec">
+
+        <div class="first-div projects-div">
+            <div class="mobile-div-img"><img src="images/recipe/1695155361498.png" class="front-img"></div>
+            <div>
+                <h2 class="project-name">Recipe App</h2>
+                <ul class="ul-li">
+                    <li class="cooler">Food</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">Full-stack</li>
+                    <li class="cooler"><img src="images/Counter.png"></li>
+                    <li class="cooler">2023</li>
+                </ul>
+                <p class="project-text">Create new food recipes and share them online. You can choose to make them private and can generate a shopping list for the recipes.</p>
+                <ul class="project-tech-list">
+                    <li class="project-tech">ruby on rails</li>
+                    <li class="project-tech">css</li>
+                    <li class="project-tech">html</li>
+                </ul>
+                <button class="mobile-btn project-btn project-btn-4">See Project</button>
+            </div>
+            <div class="desk-div-img clear"><img src="images/recipe/1695155361498.png" class="front-img"></div>
+        </div>
+
+        <div class="pop-up"></div>
         <div class="overlay"></div>
-        <div class="desk-first-div">
-            <div class="desk-div-img"><img src="images/Screenshot (5).png"></div>
-            <div class="div-info">
-                <h2>To-Do List</h2>
-                <ul class="ul-li">
-                    <li class="cooler">CANOPY</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>Back End Dev</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>2015</li>
-                </ul>
-                <p>Keep record of your daily task. Set your daily goals so you can achieve it.</p>
-                <ul class="sec-list">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javaScript</li>
-                </ul>
-                <button class="this">See Project</button>
-            </div>
+    </section>
+
+    <section id="about">
+        <div class="about-first-div">
+            <h2 class="about-head">About<br>Myself</h2>
+            <p class="about-p">As an experienced developer, I possess the expertise necessary to assist you in constructing a product, feature, or website. Please peruse my portfolio and review my extensive professional background. If you find my work aligns with your requirements and have a project that necessitates coding, please do not hesitate to reach out to me.</p>
+            <h4 class="home-h3 about-h3">LETS CONNECT</h4>
+            <ul class="about-links social-img">
+                <li class="social-img-li"><a href="https://twitter.com/Tebe95645832" target="_blank" rel="noopener"><img src="images/Vector (3).svg"></a></li>
+                <li class="social-img-li"><a href="https://www.linkedin.com/in/tebe-tisloh-847956225" target="_blank" rel="noopener"><img src="images/Linkedin icon.svg"></a></li>
+                <li class="social-img-li"><a href="https://medium.com/@ttisloh" target="_blank" rel="noopener"><img src="images/Vector (2).svg"><a></li>
+                <li class="social-img-li"><a href="https://github.com/Booze33" target="_blank" rel="noopener"><img src="images/Vector (1).svg"></a></li>
+                <li class="social-img-li"><a href="https://wellfound.com/u/pam-tisloh-tebe" target="_blank" rel="noopener"><img src="images/Vector.svg"></a></li>
+            </ul>
+            <button class="project-btn" id="downloadButton">Get My Resume</button>
         </div>
-        
-        <div class="desk-second-div">
-            <div class="div-info">
-                <h2>Multi-Post Stories</h2>
-                <ul class="ul-li">
-                    <li class="cooler">FACEBOOK</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>Full Stack Dev</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>2015</li>
-                </ul>
-                <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
-                <ul class="sec-list">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javaScript</li>
-                </ul>
-                <button class="this-2">See Project</button>
+        <div class="about-sec-div">
+            <div class="toggle">
+                <h4 class="languages">Languages</h4>
+                <i class="fa-solid fa-angle-right fa-angle-one"></i>
             </div>
-            <div class="desk-div-img"><img src="images/Snapshoot Portfolio (2).png"></div>
-        </div>
-        
-        <div class="desk-third-div">
-            <div class="desk-div-img"><img src="images/Snapshoot Portfolio (3).png"></div>
-            <div class="div-info">
-                <h2>Facebook 360</h2>
-                <ul class="ul-li">
-                    <li class="cooler">FACEBOOK</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>Full Stack Dev</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>2015</li>
-                </ul>
-                <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-                <ul class="sec-list">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javaScript</li>
-                </ul>
-                <button class="this-3">See Project</button>
+            <div class="lang-show">
+                <h3 class="display-lang"># JavaScript</h3>
+                <h3 class="display-lang"># Ruby</h3>
+                <h3 class="display-lang"># Python</h3>
             </div>
-        </div>
-        
-        <div class="desk-fourth-div">
-            <div class="div-info">
-                <h2>Uber Navigation</h2>
-                <ul class="ul-li">
-                    <li class="cooler">Uber</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>Back End Dev</li>
-                    <li><img src="images/Counter.png"></li>
-                    <li>2015</li>
-                </ul>
-                <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
-                <ul class="sec-list">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javaScript</li>
-                </ul>
-                <button class="this-4">See Project</button>
+            <div class="line-2"></div>
+            <div class="toggle">
+                <h4 class="languages">Frameworks</h4>
+                <i class="fa-solid fa-angle-right fa-angle-two"></i>
             </div>
-            <div class="desk-div-img"><img src="images/Snapshoot Portfolio.png"></div>
+            <div class="lang-show-two">
+                <h3 class="display-lang"># React Redux</h3>
+                <h3 class="display-lang"># Ruby on Rails</h3>
+                <h3 class="display-lang"># Bootstrap</h3>
+            </div>
+            <div class="line-2"></div>
+            <div class="toggle">
+                <h4 class="languages">Skills</h4>
+                <i class="fa-solid fa-angle-right fa-angle-three"></i>
+            </div>
+            <div class="lang-show-three">
+                <h3 class="display-lang"># Git</h3>
+                <h3 class="display-lang"># Terminal</h3>
+                <h3 class="display-lang"># Codekit</h3>
+            </div>
         </div>
     </section>
-    <!End-Desktop version>
-    <section class="flex" id="about">
-        <div class="flex-box">
-        <h1>About <br> Myself</h1>
-        <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-        <h3>LETS CONNECT</h3>
-        <ul class="social-img">
-            <li><a href=""><img src="images/Vector (3).svg"></></li>
-            <li><a href=""><img src="images/Linkedin icon.svg"></></li>
-            <li><a href=""><img src="images/Vector (2).svg"><a></li>
-            <li><a href=""><img src="images/Vector (1).svg"></a></li>
-            <li><a href=""><img src="images/Vector.svg"></a></li>
-        </ul>
-        <button>Get My Resume</button>
-    </div>
-    <div class="flex-box-2">
-        <ul class="flex-3">
-            <li class="grid"><h4>Languages</h4>
-                <div class="more-img"><img src="images/expand_more_FILL0_wght400_GRAD0_opsz48.svg"></div>
-                <div class="grid-2">
-                <ul class="language">
-                    <li class="lang-1"><img src="images/Ellipse 1.png"><h5>JavaScript</h5></li>
-                    <li class="lang-2"><img src="images/Ellipse 1 (1).png"><h5>HTML</h5></li>
-                    <li class="lang-3"><img src="images/Ellipse 1 (2).png"><h5>CSS</h5></li>
-                </ul>
-                </div>
-            </li>
-            <li class="li-2"><h4>Frameworks</h4><img src="images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"></li>
-            <div class="line"></div>
-            <li class="li-3"><h4>Skills</h4><img src="images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg"></li>
-            <div class="line"></div>
-        </ul>
-    </div>
-</section>
-<section class="contact-form" id="contact">
-    <h1>Contact me</h1>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-    <form id="form" method="post" action="https://formspree.io/f/mqkolpld">
-        <ul>
-            <li>
-                <label for="name">
-                <input type="text" id="same" name="user-name" placeholder="Full Name" maxlength="30" class="storage">
-                </label>
-            </li>
-            <li>
-                <label for="mail">
-                <input type="email" id="email" name="user-email" placeholder="Email" maxlength="30" class="storage">
-                <div id="error">Email should be in lowercase</div>
-                </label>
-            </li>
-            <li>
-                <label for="msg">
-                <textarea id="message" name="user_message" maxlength="500" class="storage" placeholder="Write your message here"></textarea>
-                </label>
-            </li>
-        </ul>
-        <button type="submit">Get in touch</button>
-    </form>
-</section>
-<script src="script.js" type="module"></script>
-<script src="test.js" type="module"></script>
+
+    <section class="contact-form" id="contact">
+        <h1 class="contact-head">Contact me</h1>
+        <p class="contact-p">If you have an application you are interested in developing, a feature that you need to build or a project that needs coding. I’d love to help with it </p>
+        <form id="form" method="post" action="https://formspree.io/f/mqkolpld">
+            <ul>
+                <li>
+                    <label for="name">
+                    <input type="text" id="same" name="user-name" placeholder="Full Name" maxlength="30" class="storage">
+                    <div id="error">Please enter your name.</div>
+                    </label>
+                </li>
+                <li>
+                    <label for="mail">
+                    <input type="email" id="email" name="user-email" placeholder="Email" maxlength="30" class="storage">
+                    <div id="error-2">Email should be in lowercase</div>
+                    </label>
+                </li>
+                <li>
+                    <label for="msg">
+                    <textarea id="message" name="user_message" maxlength="500" class="storage" placeholder="Write your message here"></textarea>
+                    <div id="error-3">Please enter your message.</div>
+                    </label>
+                </li>
+            </ul>
+            <button type="submit" class="contact-btn">Get in touch</button>
+        </form>
+    </section>
+    <script src="script.js" type="module"></script>
+    <script src="test.js" type="module"></script>
 </body>
 </html>
